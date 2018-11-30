@@ -1,0 +1,5172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Compare creates a map of viewers 1`] = `
+<div
+  className="page"
+>
+  <Component
+    compareComponent={
+      Compare {
+        "_isMounted": true,
+        "context": Object {},
+        "props": Object {
+          "history": Object {
+            "push": [MockFunction],
+          },
+          "location": Object {
+            "pathname": "/compare",
+            "search": "?runlist=run-with-workflow",
+          },
+          "match": Object {
+            "params": Object {},
+          },
+          "toolbarProps": Object {
+            "actions": Array [
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "expandBtn",
+                "title": "Expand all",
+                "tooltip": "Expand all sections",
+              },
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "collapseBtn",
+                "title": "Collapse all",
+                "tooltip": "Collapse all sections",
+              },
+            ],
+            "breadcrumbs": Array [
+              Object {
+                "displayName": "Experiments",
+                "href": "/experiments",
+              },
+            ],
+            "pageTitle": "Compare runs",
+          },
+          "updateBanner": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {},
+              ],
+            ],
+          },
+          "updateDialog": [MockFunction],
+          "updateSnackbar": [MockFunction],
+          "updateToolbar": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                },
+              ],
+            ],
+          },
+        },
+        "refs": Object {},
+        "setState": [Function],
+        "state": Object {
+          "collapseSections": Object {},
+          "fullscreenViewerConfig": null,
+          "paramsCompareProps": Object {
+            "rows": Array [],
+            "xLabels": Array [
+              "test run run-with-workflow",
+            ],
+            "yLabels": Array [],
+          },
+          "runs": Array [
+            Object {
+              "pipeline_runtime": Object {
+                "workflow_manifest": "{\\"status\\":{\\"nodes\\":{\\"node1\\":{\\"outputs\\":{\\"artifacts\\":[{\\"name\\":\\"mlpipeline-ui-metadata\\",\\"s3\\":{\\"bucket\\":\\"test bucket\\",\\"key\\":\\"test key\\"}}]}}}}}",
+              },
+              "run": Object {
+                "id": "run-with-workflow",
+                "name": "test run run-with-workflow",
+              },
+            },
+          ],
+          "selectedIds": Array [
+            "run-with-workflow",
+          ],
+          "viewersMap": Map {
+            "tensorboard" => Array [
+              Object {
+                "config": Object {
+                  "type": "tensorboard",
+                  "url": "gs://path",
+                },
+                "runId": "run-with-workflow",
+                "runName": "test run run-with-workflow",
+              },
+            ],
+            "table" => Array [
+              Object {
+                "config": Object {
+                  "data": Array [
+                    Array [
+                      "{\\"outputs\\": [{\\"format\\":\\"csv\\"",
+                      "header",
+                      "[\\"col1",
+                      "col2\\"]",
+                      "source",
+                      "gs://path",
+                      "type",
+                      "table",
+                      "",
+                      "{\\"source\\":\\"gs://path\\"",
+                      "type",
+                      "tensorboard",
+                      "]}",
+                    ],
+                  ],
+                  "labels": Array [
+                    "col1, col2",
+                  ],
+                  "type": "table",
+                },
+                "runId": "run-with-workflow",
+                "runName": "test run run-with-workflow",
+              },
+            ],
+          },
+          "workflowObjects": Array [
+            Object {
+              "status": Object {
+                "nodes": Object {
+                  "node1": Object {
+                    "outputs": Object {
+                      "artifacts": Array [
+                        Object {
+                          "name": "mlpipeline-ui-metadata",
+                          "s3": Object {
+                            "bucket": "test bucket",
+                            "key": "test key",
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+              },
+            },
+          ],
+        },
+        "updater": Updater {
+          "_callbacks": Array [],
+          "_renderer": ReactShallowRenderer {
+            "_context": Object {},
+            "_element": <Compare
+              history={
+                Object {
+                  "push": [MockFunction],
+                }
+              }
+              location={
+                Object {
+                  "pathname": "/compare",
+                  "search": "?runlist=run-with-workflow",
+                }
+              }
+              match={
+                Object {
+                  "params": Object {},
+                }
+              }
+              toolbarProps={
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                }
+              }
+              updateBanner={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {},
+                    ],
+                  ],
+                }
+              }
+              updateDialog={[MockFunction]}
+              updateSnackbar={[MockFunction]}
+              updateToolbar={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {
+                        "actions": Array [
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "expandBtn",
+                            "title": "Expand all",
+                            "tooltip": "Expand all sections",
+                          },
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "collapseBtn",
+                            "title": "Collapse all",
+                            "tooltip": "Collapse all sections",
+                          },
+                        ],
+                        "breadcrumbs": Array [
+                          Object {
+                            "displayName": "Experiments",
+                            "href": "/experiments",
+                          },
+                        ],
+                        "pageTitle": "Compare runs",
+                      },
+                    ],
+                  ],
+                }
+              }
+            />,
+            "_forcedUpdate": false,
+            "_instance": [Circular],
+            "_newState": Object {
+              "collapseSections": Object {},
+              "fullscreenViewerConfig": null,
+              "paramsCompareProps": Object {
+                "rows": Array [],
+                "xLabels": Array [
+                  "test run run-with-workflow",
+                ],
+                "yLabels": Array [],
+              },
+              "runs": Array [
+                Object {
+                  "pipeline_runtime": Object {
+                    "workflow_manifest": "{\\"status\\":{\\"nodes\\":{\\"node1\\":{\\"outputs\\":{\\"artifacts\\":[{\\"name\\":\\"mlpipeline-ui-metadata\\",\\"s3\\":{\\"bucket\\":\\"test bucket\\",\\"key\\":\\"test key\\"}}]}}}}}",
+                  },
+                  "run": Object {
+                    "id": "run-with-workflow",
+                    "name": "test run run-with-workflow",
+                  },
+                },
+              ],
+              "selectedIds": Array [
+                "run-with-workflow",
+              ],
+              "viewersMap": Map {
+                "tensorboard" => Array [
+                  Object {
+                    "config": Object {
+                      "type": "tensorboard",
+                      "url": "gs://path",
+                    },
+                    "runId": "run-with-workflow",
+                    "runName": "test run run-with-workflow",
+                  },
+                ],
+                "table" => Array [
+                  Object {
+                    "config": Object {
+                      "data": Array [
+                        Array [
+                          "{\\"outputs\\": [{\\"format\\":\\"csv\\"",
+                          "header",
+                          "[\\"col1",
+                          "col2\\"]",
+                          "source",
+                          "gs://path",
+                          "type",
+                          "table",
+                          "",
+                          "{\\"source\\":\\"gs://path\\"",
+                          "type",
+                          "tensorboard",
+                          "]}",
+                        ],
+                      ],
+                      "labels": Array [
+                        "col1, col2",
+                      ],
+                      "type": "table",
+                    },
+                    "runId": "run-with-workflow",
+                    "runName": "test run run-with-workflow",
+                  },
+                ],
+              },
+              "workflowObjects": Array [
+                Object {
+                  "status": Object {
+                    "nodes": Object {
+                      "node1": Object {
+                        "outputs": Object {
+                          "artifacts": Array [
+                            Object {
+                              "name": "mlpipeline-ui-metadata",
+                              "s3": Object {
+                                "bucket": "test bucket",
+                                "key": "test key",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                  },
+                },
+              ],
+            },
+            "_rendered": <div
+              className="page"
+            >
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Run overview"
+              />
+              <div
+                className="noShrink"
+              >
+                <RunList
+                  disablePaging={true}
+                  history={
+                    Object {
+                      "push": [MockFunction],
+                    }
+                  }
+                  location={
+                    Object {
+                      "pathname": "/compare",
+                      "search": "?runlist=run-with-workflow",
+                    }
+                  }
+                  match={
+                    Object {
+                      "params": Object {},
+                    }
+                  }
+                  onError={[Function]}
+                  onSelectionChange={[Function]}
+                  runIdListMask={
+                    Array [
+                      "run-with-workflow",
+                    ]
+                  }
+                  selectedIds={
+                    Array [
+                      "run-with-workflow",
+                    ]
+                  }
+                  toolbarProps={
+                    Object {
+                      "actions": Array [
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "expandBtn",
+                          "title": "Expand all",
+                          "tooltip": "Expand all sections",
+                        },
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "collapseBtn",
+                          "title": "Collapse all",
+                          "tooltip": "Collapse all sections",
+                        },
+                      ],
+                      "breadcrumbs": Array [
+                        Object {
+                          "displayName": "Experiments",
+                          "href": "/experiments",
+                        },
+                      ],
+                      "pageTitle": "Compare runs",
+                    }
+                  }
+                  updateBanner={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {},
+                        ],
+                      ],
+                    }
+                  }
+                  updateDialog={[MockFunction]}
+                  updateSnackbar={[MockFunction]}
+                  updateToolbar={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {
+                            "actions": Array [
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "expandBtn",
+                                "title": "Expand all",
+                                "tooltip": "Expand all sections",
+                              },
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "collapseBtn",
+                                "title": "Collapse all",
+                                "tooltip": "Collapse all sections",
+                              },
+                            ],
+                            "breadcrumbs": Array [
+                              Object {
+                                "displayName": "Experiments",
+                                "href": "/experiments",
+                              },
+                            ],
+                            "pageTitle": "Compare runs",
+                          },
+                        ],
+                      ],
+                    }
+                  }
+                />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Parameters"
+              />
+              <div
+                className="noShrink outputsRow"
+              >
+                <Unknown
+                  orientation="vertical"
+                />
+                <CompareTable
+                  rows={Array []}
+                  xLabels={
+                    Array [
+                      "test run run-with-workflow",
+                    ]
+                  }
+                  yLabels={Array []}
+                />
+                <Unknown />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+              <div>
+                <Unknown
+                  compareComponent={[Circular]}
+                  sectionName="Tensorboard"
+                />
+                <UNDEFINED>
+                  <div
+                    className="flex outputsRow"
+                  >
+                    <PlotCard
+                      configs={
+                        Array [
+                          Object {
+                            "type": "tensorboard",
+                            "url": "gs://path",
+                          },
+                        ]
+                      }
+                      maxDimension={400}
+                      title="test run run-with-workflow"
+                    />
+                    <Unknown />
+                  </div>
+                  <Unknown />
+                </UNDEFINED>
+                <Unknown
+                  orientation="vertical"
+                />
+              </div>
+              <div>
+                <Unknown
+                  compareComponent={[Circular]}
+                  sectionName="Table"
+                />
+                <UNDEFINED>
+                  <div
+                    className="flex outputsRow"
+                  >
+                    <PlotCard
+                      configs={
+                        Array [
+                          Object {
+                            "data": Array [
+                              Array [
+                                "{\\"outputs\\": [{\\"format\\":\\"csv\\"",
+                                "header",
+                                "[\\"col1",
+                                "col2\\"]",
+                                "source",
+                                "gs://path",
+                                "type",
+                                "table",
+                                "",
+                                "{\\"source\\":\\"gs://path\\"",
+                                "type",
+                                "tensorboard",
+                                "]}",
+                              ],
+                            ],
+                            "labels": Array [
+                              "col1, col2",
+                            ],
+                            "type": "table",
+                          },
+                        ]
+                      }
+                      maxDimension={400}
+                      title="test run run-with-workflow"
+                    />
+                    <Unknown />
+                  </div>
+                  <Unknown />
+                </UNDEFINED>
+                <Unknown
+                  orientation="vertical"
+                />
+              </div>
+            </div>,
+            "_rendering": false,
+            "_updater": [Circular],
+          },
+        },
+        Symbol(enzyme.__setState__): [Function],
+      }
+    }
+    sectionName="Run overview"
+  />
+  <div
+    className="noShrink"
+  >
+    <RunList
+      disablePaging={true}
+      history={
+        Object {
+          "push": [MockFunction],
+        }
+      }
+      location={
+        Object {
+          "pathname": "/compare",
+          "search": "?runlist=run-with-workflow",
+        }
+      }
+      match={
+        Object {
+          "params": Object {},
+        }
+      }
+      onError={[Function]}
+      onSelectionChange={[Function]}
+      runIdListMask={
+        Array [
+          "run-with-workflow",
+        ]
+      }
+      selectedIds={
+        Array [
+          "run-with-workflow",
+        ]
+      }
+      toolbarProps={
+        Object {
+          "actions": Array [
+            Object {
+              "action": [Function],
+              "icon": [Function],
+              "id": "expandBtn",
+              "title": "Expand all",
+              "tooltip": "Expand all sections",
+            },
+            Object {
+              "action": [Function],
+              "icon": [Function],
+              "id": "collapseBtn",
+              "title": "Collapse all",
+              "tooltip": "Collapse all sections",
+            },
+          ],
+          "breadcrumbs": Array [
+            Object {
+              "displayName": "Experiments",
+              "href": "/experiments",
+            },
+          ],
+          "pageTitle": "Compare runs",
+        }
+      }
+      updateBanner={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {},
+            ],
+          ],
+        }
+      }
+      updateDialog={[MockFunction]}
+      updateSnackbar={[MockFunction]}
+      updateToolbar={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {
+                "actions": Array [
+                  Object {
+                    "action": [Function],
+                    "icon": [Function],
+                    "id": "expandBtn",
+                    "title": "Expand all",
+                    "tooltip": "Expand all sections",
+                  },
+                  Object {
+                    "action": [Function],
+                    "icon": [Function],
+                    "id": "collapseBtn",
+                    "title": "Collapse all",
+                    "tooltip": "Collapse all sections",
+                  },
+                ],
+                "breadcrumbs": Array [
+                  Object {
+                    "displayName": "Experiments",
+                    "href": "/experiments",
+                  },
+                ],
+                "pageTitle": "Compare runs",
+              },
+            ],
+          ],
+        }
+      }
+    />
+  </div>
+  <Component
+    orientation="vertical"
+  />
+  <Component
+    compareComponent={
+      Compare {
+        "_isMounted": true,
+        "context": Object {},
+        "props": Object {
+          "history": Object {
+            "push": [MockFunction],
+          },
+          "location": Object {
+            "pathname": "/compare",
+            "search": "?runlist=run-with-workflow",
+          },
+          "match": Object {
+            "params": Object {},
+          },
+          "toolbarProps": Object {
+            "actions": Array [
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "expandBtn",
+                "title": "Expand all",
+                "tooltip": "Expand all sections",
+              },
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "collapseBtn",
+                "title": "Collapse all",
+                "tooltip": "Collapse all sections",
+              },
+            ],
+            "breadcrumbs": Array [
+              Object {
+                "displayName": "Experiments",
+                "href": "/experiments",
+              },
+            ],
+            "pageTitle": "Compare runs",
+          },
+          "updateBanner": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {},
+              ],
+            ],
+          },
+          "updateDialog": [MockFunction],
+          "updateSnackbar": [MockFunction],
+          "updateToolbar": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                },
+              ],
+            ],
+          },
+        },
+        "refs": Object {},
+        "setState": [Function],
+        "state": Object {
+          "collapseSections": Object {},
+          "fullscreenViewerConfig": null,
+          "paramsCompareProps": Object {
+            "rows": Array [],
+            "xLabels": Array [
+              "test run run-with-workflow",
+            ],
+            "yLabels": Array [],
+          },
+          "runs": Array [
+            Object {
+              "pipeline_runtime": Object {
+                "workflow_manifest": "{\\"status\\":{\\"nodes\\":{\\"node1\\":{\\"outputs\\":{\\"artifacts\\":[{\\"name\\":\\"mlpipeline-ui-metadata\\",\\"s3\\":{\\"bucket\\":\\"test bucket\\",\\"key\\":\\"test key\\"}}]}}}}}",
+              },
+              "run": Object {
+                "id": "run-with-workflow",
+                "name": "test run run-with-workflow",
+              },
+            },
+          ],
+          "selectedIds": Array [
+            "run-with-workflow",
+          ],
+          "viewersMap": Map {
+            "tensorboard" => Array [
+              Object {
+                "config": Object {
+                  "type": "tensorboard",
+                  "url": "gs://path",
+                },
+                "runId": "run-with-workflow",
+                "runName": "test run run-with-workflow",
+              },
+            ],
+            "table" => Array [
+              Object {
+                "config": Object {
+                  "data": Array [
+                    Array [
+                      "{\\"outputs\\": [{\\"format\\":\\"csv\\"",
+                      "header",
+                      "[\\"col1",
+                      "col2\\"]",
+                      "source",
+                      "gs://path",
+                      "type",
+                      "table",
+                      "",
+                      "{\\"source\\":\\"gs://path\\"",
+                      "type",
+                      "tensorboard",
+                      "]}",
+                    ],
+                  ],
+                  "labels": Array [
+                    "col1, col2",
+                  ],
+                  "type": "table",
+                },
+                "runId": "run-with-workflow",
+                "runName": "test run run-with-workflow",
+              },
+            ],
+          },
+          "workflowObjects": Array [
+            Object {
+              "status": Object {
+                "nodes": Object {
+                  "node1": Object {
+                    "outputs": Object {
+                      "artifacts": Array [
+                        Object {
+                          "name": "mlpipeline-ui-metadata",
+                          "s3": Object {
+                            "bucket": "test bucket",
+                            "key": "test key",
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+              },
+            },
+          ],
+        },
+        "updater": Updater {
+          "_callbacks": Array [],
+          "_renderer": ReactShallowRenderer {
+            "_context": Object {},
+            "_element": <Compare
+              history={
+                Object {
+                  "push": [MockFunction],
+                }
+              }
+              location={
+                Object {
+                  "pathname": "/compare",
+                  "search": "?runlist=run-with-workflow",
+                }
+              }
+              match={
+                Object {
+                  "params": Object {},
+                }
+              }
+              toolbarProps={
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                }
+              }
+              updateBanner={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {},
+                    ],
+                  ],
+                }
+              }
+              updateDialog={[MockFunction]}
+              updateSnackbar={[MockFunction]}
+              updateToolbar={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {
+                        "actions": Array [
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "expandBtn",
+                            "title": "Expand all",
+                            "tooltip": "Expand all sections",
+                          },
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "collapseBtn",
+                            "title": "Collapse all",
+                            "tooltip": "Collapse all sections",
+                          },
+                        ],
+                        "breadcrumbs": Array [
+                          Object {
+                            "displayName": "Experiments",
+                            "href": "/experiments",
+                          },
+                        ],
+                        "pageTitle": "Compare runs",
+                      },
+                    ],
+                  ],
+                }
+              }
+            />,
+            "_forcedUpdate": false,
+            "_instance": [Circular],
+            "_newState": Object {
+              "collapseSections": Object {},
+              "fullscreenViewerConfig": null,
+              "paramsCompareProps": Object {
+                "rows": Array [],
+                "xLabels": Array [
+                  "test run run-with-workflow",
+                ],
+                "yLabels": Array [],
+              },
+              "runs": Array [
+                Object {
+                  "pipeline_runtime": Object {
+                    "workflow_manifest": "{\\"status\\":{\\"nodes\\":{\\"node1\\":{\\"outputs\\":{\\"artifacts\\":[{\\"name\\":\\"mlpipeline-ui-metadata\\",\\"s3\\":{\\"bucket\\":\\"test bucket\\",\\"key\\":\\"test key\\"}}]}}}}}",
+                  },
+                  "run": Object {
+                    "id": "run-with-workflow",
+                    "name": "test run run-with-workflow",
+                  },
+                },
+              ],
+              "selectedIds": Array [
+                "run-with-workflow",
+              ],
+              "viewersMap": Map {
+                "tensorboard" => Array [
+                  Object {
+                    "config": Object {
+                      "type": "tensorboard",
+                      "url": "gs://path",
+                    },
+                    "runId": "run-with-workflow",
+                    "runName": "test run run-with-workflow",
+                  },
+                ],
+                "table" => Array [
+                  Object {
+                    "config": Object {
+                      "data": Array [
+                        Array [
+                          "{\\"outputs\\": [{\\"format\\":\\"csv\\"",
+                          "header",
+                          "[\\"col1",
+                          "col2\\"]",
+                          "source",
+                          "gs://path",
+                          "type",
+                          "table",
+                          "",
+                          "{\\"source\\":\\"gs://path\\"",
+                          "type",
+                          "tensorboard",
+                          "]}",
+                        ],
+                      ],
+                      "labels": Array [
+                        "col1, col2",
+                      ],
+                      "type": "table",
+                    },
+                    "runId": "run-with-workflow",
+                    "runName": "test run run-with-workflow",
+                  },
+                ],
+              },
+              "workflowObjects": Array [
+                Object {
+                  "status": Object {
+                    "nodes": Object {
+                      "node1": Object {
+                        "outputs": Object {
+                          "artifacts": Array [
+                            Object {
+                              "name": "mlpipeline-ui-metadata",
+                              "s3": Object {
+                                "bucket": "test bucket",
+                                "key": "test key",
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                  },
+                },
+              ],
+            },
+            "_rendered": <div
+              className="page"
+            >
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Run overview"
+              />
+              <div
+                className="noShrink"
+              >
+                <RunList
+                  disablePaging={true}
+                  history={
+                    Object {
+                      "push": [MockFunction],
+                    }
+                  }
+                  location={
+                    Object {
+                      "pathname": "/compare",
+                      "search": "?runlist=run-with-workflow",
+                    }
+                  }
+                  match={
+                    Object {
+                      "params": Object {},
+                    }
+                  }
+                  onError={[Function]}
+                  onSelectionChange={[Function]}
+                  runIdListMask={
+                    Array [
+                      "run-with-workflow",
+                    ]
+                  }
+                  selectedIds={
+                    Array [
+                      "run-with-workflow",
+                    ]
+                  }
+                  toolbarProps={
+                    Object {
+                      "actions": Array [
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "expandBtn",
+                          "title": "Expand all",
+                          "tooltip": "Expand all sections",
+                        },
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "collapseBtn",
+                          "title": "Collapse all",
+                          "tooltip": "Collapse all sections",
+                        },
+                      ],
+                      "breadcrumbs": Array [
+                        Object {
+                          "displayName": "Experiments",
+                          "href": "/experiments",
+                        },
+                      ],
+                      "pageTitle": "Compare runs",
+                    }
+                  }
+                  updateBanner={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {},
+                        ],
+                      ],
+                    }
+                  }
+                  updateDialog={[MockFunction]}
+                  updateSnackbar={[MockFunction]}
+                  updateToolbar={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {
+                            "actions": Array [
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "expandBtn",
+                                "title": "Expand all",
+                                "tooltip": "Expand all sections",
+                              },
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "collapseBtn",
+                                "title": "Collapse all",
+                                "tooltip": "Collapse all sections",
+                              },
+                            ],
+                            "breadcrumbs": Array [
+                              Object {
+                                "displayName": "Experiments",
+                                "href": "/experiments",
+                              },
+                            ],
+                            "pageTitle": "Compare runs",
+                          },
+                        ],
+                      ],
+                    }
+                  }
+                />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Parameters"
+              />
+              <div
+                className="noShrink outputsRow"
+              >
+                <Unknown
+                  orientation="vertical"
+                />
+                <CompareTable
+                  rows={Array []}
+                  xLabels={
+                    Array [
+                      "test run run-with-workflow",
+                    ]
+                  }
+                  yLabels={Array []}
+                />
+                <Unknown />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+              <div>
+                <Unknown
+                  compareComponent={[Circular]}
+                  sectionName="Tensorboard"
+                />
+                <UNDEFINED>
+                  <div
+                    className="flex outputsRow"
+                  >
+                    <PlotCard
+                      configs={
+                        Array [
+                          Object {
+                            "type": "tensorboard",
+                            "url": "gs://path",
+                          },
+                        ]
+                      }
+                      maxDimension={400}
+                      title="test run run-with-workflow"
+                    />
+                    <Unknown />
+                  </div>
+                  <Unknown />
+                </UNDEFINED>
+                <Unknown
+                  orientation="vertical"
+                />
+              </div>
+              <div>
+                <Unknown
+                  compareComponent={[Circular]}
+                  sectionName="Table"
+                />
+                <UNDEFINED>
+                  <div
+                    className="flex outputsRow"
+                  >
+                    <PlotCard
+                      configs={
+                        Array [
+                          Object {
+                            "data": Array [
+                              Array [
+                                "{\\"outputs\\": [{\\"format\\":\\"csv\\"",
+                                "header",
+                                "[\\"col1",
+                                "col2\\"]",
+                                "source",
+                                "gs://path",
+                                "type",
+                                "table",
+                                "",
+                                "{\\"source\\":\\"gs://path\\"",
+                                "type",
+                                "tensorboard",
+                                "]}",
+                              ],
+                            ],
+                            "labels": Array [
+                              "col1, col2",
+                            ],
+                            "type": "table",
+                          },
+                        ]
+                      }
+                      maxDimension={400}
+                      title="test run run-with-workflow"
+                    />
+                    <Unknown />
+                  </div>
+                  <Unknown />
+                </UNDEFINED>
+                <Unknown
+                  orientation="vertical"
+                />
+              </div>
+            </div>,
+            "_rendering": false,
+            "_updater": [Circular],
+          },
+        },
+        Symbol(enzyme.__setState__): [Function],
+      }
+    }
+    sectionName="Parameters"
+  />
+  <div
+    className="noShrink outputsRow"
+  >
+    <Component
+      orientation="vertical"
+    />
+    <CompareTable
+      rows={Array []}
+      xLabels={
+        Array [
+          "test run run-with-workflow",
+        ]
+      }
+      yLabels={Array []}
+    />
+    <Component />
+  </div>
+  <Component
+    orientation="vertical"
+  />
+  <div
+    key="0"
+  >
+    <Component
+      compareComponent={
+        Compare {
+          "_isMounted": true,
+          "context": Object {},
+          "props": Object {
+            "history": Object {
+              "push": [MockFunction],
+            },
+            "location": Object {
+              "pathname": "/compare",
+              "search": "?runlist=run-with-workflow",
+            },
+            "match": Object {
+              "params": Object {},
+            },
+            "toolbarProps": Object {
+              "actions": Array [
+                Object {
+                  "action": [Function],
+                  "icon": [Function],
+                  "id": "expandBtn",
+                  "title": "Expand all",
+                  "tooltip": "Expand all sections",
+                },
+                Object {
+                  "action": [Function],
+                  "icon": [Function],
+                  "id": "collapseBtn",
+                  "title": "Collapse all",
+                  "tooltip": "Collapse all sections",
+                },
+              ],
+              "breadcrumbs": Array [
+                Object {
+                  "displayName": "Experiments",
+                  "href": "/experiments",
+                },
+              ],
+              "pageTitle": "Compare runs",
+            },
+            "updateBanner": [MockFunction] {
+              "calls": Array [
+                Array [
+                  Object {},
+                ],
+              ],
+            },
+            "updateDialog": [MockFunction],
+            "updateSnackbar": [MockFunction],
+            "updateToolbar": [MockFunction] {
+              "calls": Array [
+                Array [
+                  Object {
+                    "actions": Array [
+                      Object {
+                        "action": [Function],
+                        "icon": [Function],
+                        "id": "expandBtn",
+                        "title": "Expand all",
+                        "tooltip": "Expand all sections",
+                      },
+                      Object {
+                        "action": [Function],
+                        "icon": [Function],
+                        "id": "collapseBtn",
+                        "title": "Collapse all",
+                        "tooltip": "Collapse all sections",
+                      },
+                    ],
+                    "breadcrumbs": Array [
+                      Object {
+                        "displayName": "Experiments",
+                        "href": "/experiments",
+                      },
+                    ],
+                    "pageTitle": "Compare runs",
+                  },
+                ],
+              ],
+            },
+          },
+          "refs": Object {},
+          "setState": [Function],
+          "state": Object {
+            "collapseSections": Object {},
+            "fullscreenViewerConfig": null,
+            "paramsCompareProps": Object {
+              "rows": Array [],
+              "xLabels": Array [
+                "test run run-with-workflow",
+              ],
+              "yLabels": Array [],
+            },
+            "runs": Array [
+              Object {
+                "pipeline_runtime": Object {
+                  "workflow_manifest": "{\\"status\\":{\\"nodes\\":{\\"node1\\":{\\"outputs\\":{\\"artifacts\\":[{\\"name\\":\\"mlpipeline-ui-metadata\\",\\"s3\\":{\\"bucket\\":\\"test bucket\\",\\"key\\":\\"test key\\"}}]}}}}}",
+                },
+                "run": Object {
+                  "id": "run-with-workflow",
+                  "name": "test run run-with-workflow",
+                },
+              },
+            ],
+            "selectedIds": Array [
+              "run-with-workflow",
+            ],
+            "viewersMap": Map {
+              "tensorboard" => Array [
+                Object {
+                  "config": Object {
+                    "type": "tensorboard",
+                    "url": "gs://path",
+                  },
+                  "runId": "run-with-workflow",
+                  "runName": "test run run-with-workflow",
+                },
+              ],
+              "table" => Array [
+                Object {
+                  "config": Object {
+                    "data": Array [
+                      Array [
+                        "{\\"outputs\\": [{\\"format\\":\\"csv\\"",
+                        "header",
+                        "[\\"col1",
+                        "col2\\"]",
+                        "source",
+                        "gs://path",
+                        "type",
+                        "table",
+                        "",
+                        "{\\"source\\":\\"gs://path\\"",
+                        "type",
+                        "tensorboard",
+                        "]}",
+                      ],
+                    ],
+                    "labels": Array [
+                      "col1, col2",
+                    ],
+                    "type": "table",
+                  },
+                  "runId": "run-with-workflow",
+                  "runName": "test run run-with-workflow",
+                },
+              ],
+            },
+            "workflowObjects": Array [
+              Object {
+                "status": Object {
+                  "nodes": Object {
+                    "node1": Object {
+                      "outputs": Object {
+                        "artifacts": Array [
+                          Object {
+                            "name": "mlpipeline-ui-metadata",
+                            "s3": Object {
+                              "bucket": "test bucket",
+                              "key": "test key",
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  },
+                },
+              },
+            ],
+          },
+          "updater": Updater {
+            "_callbacks": Array [],
+            "_renderer": ReactShallowRenderer {
+              "_context": Object {},
+              "_element": <Compare
+                history={
+                  Object {
+                    "push": [MockFunction],
+                  }
+                }
+                location={
+                  Object {
+                    "pathname": "/compare",
+                    "search": "?runlist=run-with-workflow",
+                  }
+                }
+                match={
+                  Object {
+                    "params": Object {},
+                  }
+                }
+                toolbarProps={
+                  Object {
+                    "actions": Array [
+                      Object {
+                        "action": [Function],
+                        "icon": [Function],
+                        "id": "expandBtn",
+                        "title": "Expand all",
+                        "tooltip": "Expand all sections",
+                      },
+                      Object {
+                        "action": [Function],
+                        "icon": [Function],
+                        "id": "collapseBtn",
+                        "title": "Collapse all",
+                        "tooltip": "Collapse all sections",
+                      },
+                    ],
+                    "breadcrumbs": Array [
+                      Object {
+                        "displayName": "Experiments",
+                        "href": "/experiments",
+                      },
+                    ],
+                    "pageTitle": "Compare runs",
+                  }
+                }
+                updateBanner={
+                  [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        Object {},
+                      ],
+                    ],
+                  }
+                }
+                updateDialog={[MockFunction]}
+                updateSnackbar={[MockFunction]}
+                updateToolbar={
+                  [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        Object {
+                          "actions": Array [
+                            Object {
+                              "action": [Function],
+                              "icon": [Function],
+                              "id": "expandBtn",
+                              "title": "Expand all",
+                              "tooltip": "Expand all sections",
+                            },
+                            Object {
+                              "action": [Function],
+                              "icon": [Function],
+                              "id": "collapseBtn",
+                              "title": "Collapse all",
+                              "tooltip": "Collapse all sections",
+                            },
+                          ],
+                          "breadcrumbs": Array [
+                            Object {
+                              "displayName": "Experiments",
+                              "href": "/experiments",
+                            },
+                          ],
+                          "pageTitle": "Compare runs",
+                        },
+                      ],
+                    ],
+                  }
+                }
+              />,
+              "_forcedUpdate": false,
+              "_instance": [Circular],
+              "_newState": Object {
+                "collapseSections": Object {},
+                "fullscreenViewerConfig": null,
+                "paramsCompareProps": Object {
+                  "rows": Array [],
+                  "xLabels": Array [
+                    "test run run-with-workflow",
+                  ],
+                  "yLabels": Array [],
+                },
+                "runs": Array [
+                  Object {
+                    "pipeline_runtime": Object {
+                      "workflow_manifest": "{\\"status\\":{\\"nodes\\":{\\"node1\\":{\\"outputs\\":{\\"artifacts\\":[{\\"name\\":\\"mlpipeline-ui-metadata\\",\\"s3\\":{\\"bucket\\":\\"test bucket\\",\\"key\\":\\"test key\\"}}]}}}}}",
+                    },
+                    "run": Object {
+                      "id": "run-with-workflow",
+                      "name": "test run run-with-workflow",
+                    },
+                  },
+                ],
+                "selectedIds": Array [
+                  "run-with-workflow",
+                ],
+                "viewersMap": Map {
+                  "tensorboard" => Array [
+                    Object {
+                      "config": Object {
+                        "type": "tensorboard",
+                        "url": "gs://path",
+                      },
+                      "runId": "run-with-workflow",
+                      "runName": "test run run-with-workflow",
+                    },
+                  ],
+                  "table" => Array [
+                    Object {
+                      "config": Object {
+                        "data": Array [
+                          Array [
+                            "{\\"outputs\\": [{\\"format\\":\\"csv\\"",
+                            "header",
+                            "[\\"col1",
+                            "col2\\"]",
+                            "source",
+                            "gs://path",
+                            "type",
+                            "table",
+                            "",
+                            "{\\"source\\":\\"gs://path\\"",
+                            "type",
+                            "tensorboard",
+                            "]}",
+                          ],
+                        ],
+                        "labels": Array [
+                          "col1, col2",
+                        ],
+                        "type": "table",
+                      },
+                      "runId": "run-with-workflow",
+                      "runName": "test run run-with-workflow",
+                    },
+                  ],
+                },
+                "workflowObjects": Array [
+                  Object {
+                    "status": Object {
+                      "nodes": Object {
+                        "node1": Object {
+                          "outputs": Object {
+                            "artifacts": Array [
+                              Object {
+                                "name": "mlpipeline-ui-metadata",
+                                "s3": Object {
+                                  "bucket": "test bucket",
+                                  "key": "test key",
+                                },
+                              },
+                            ],
+                          },
+                        },
+                      },
+                    },
+                  },
+                ],
+              },
+              "_rendered": <div
+                className="page"
+              >
+                <Unknown
+                  compareComponent={[Circular]}
+                  sectionName="Run overview"
+                />
+                <div
+                  className="noShrink"
+                >
+                  <RunList
+                    disablePaging={true}
+                    history={
+                      Object {
+                        "push": [MockFunction],
+                      }
+                    }
+                    location={
+                      Object {
+                        "pathname": "/compare",
+                        "search": "?runlist=run-with-workflow",
+                      }
+                    }
+                    match={
+                      Object {
+                        "params": Object {},
+                      }
+                    }
+                    onError={[Function]}
+                    onSelectionChange={[Function]}
+                    runIdListMask={
+                      Array [
+                        "run-with-workflow",
+                      ]
+                    }
+                    selectedIds={
+                      Array [
+                        "run-with-workflow",
+                      ]
+                    }
+                    toolbarProps={
+                      Object {
+                        "actions": Array [
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "expandBtn",
+                            "title": "Expand all",
+                            "tooltip": "Expand all sections",
+                          },
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "collapseBtn",
+                            "title": "Collapse all",
+                            "tooltip": "Collapse all sections",
+                          },
+                        ],
+                        "breadcrumbs": Array [
+                          Object {
+                            "displayName": "Experiments",
+                            "href": "/experiments",
+                          },
+                        ],
+                        "pageTitle": "Compare runs",
+                      }
+                    }
+                    updateBanner={
+                      [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            Object {},
+                          ],
+                        ],
+                      }
+                    }
+                    updateDialog={[MockFunction]}
+                    updateSnackbar={[MockFunction]}
+                    updateToolbar={
+                      [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            Object {
+                              "actions": Array [
+                                Object {
+                                  "action": [Function],
+                                  "icon": [Function],
+                                  "id": "expandBtn",
+                                  "title": "Expand all",
+                                  "tooltip": "Expand all sections",
+                                },
+                                Object {
+                                  "action": [Function],
+                                  "icon": [Function],
+                                  "id": "collapseBtn",
+                                  "title": "Collapse all",
+                                  "tooltip": "Collapse all sections",
+                                },
+                              ],
+                              "breadcrumbs": Array [
+                                Object {
+                                  "displayName": "Experiments",
+                                  "href": "/experiments",
+                                },
+                              ],
+                              "pageTitle": "Compare runs",
+                            },
+                          ],
+                        ],
+                      }
+                    }
+                  />
+                </div>
+                <Unknown
+                  orientation="vertical"
+                />
+                <Unknown
+                  compareComponent={[Circular]}
+                  sectionName="Parameters"
+                />
+                <div
+                  className="noShrink outputsRow"
+                >
+                  <Unknown
+                    orientation="vertical"
+                  />
+                  <CompareTable
+                    rows={Array []}
+                    xLabels={
+                      Array [
+                        "test run run-with-workflow",
+                      ]
+                    }
+                    yLabels={Array []}
+                  />
+                  <Unknown />
+                </div>
+                <Unknown
+                  orientation="vertical"
+                />
+                <div>
+                  <Unknown
+                    compareComponent={[Circular]}
+                    sectionName="Tensorboard"
+                  />
+                  <UNDEFINED>
+                    <div
+                      className="flex outputsRow"
+                    >
+                      <PlotCard
+                        configs={
+                          Array [
+                            Object {
+                              "type": "tensorboard",
+                              "url": "gs://path",
+                            },
+                          ]
+                        }
+                        maxDimension={400}
+                        title="test run run-with-workflow"
+                      />
+                      <Unknown />
+                    </div>
+                    <Unknown />
+                  </UNDEFINED>
+                  <Unknown
+                    orientation="vertical"
+                  />
+                </div>
+                <div>
+                  <Unknown
+                    compareComponent={[Circular]}
+                    sectionName="Table"
+                  />
+                  <UNDEFINED>
+                    <div
+                      className="flex outputsRow"
+                    >
+                      <PlotCard
+                        configs={
+                          Array [
+                            Object {
+                              "data": Array [
+                                Array [
+                                  "{\\"outputs\\": [{\\"format\\":\\"csv\\"",
+                                  "header",
+                                  "[\\"col1",
+                                  "col2\\"]",
+                                  "source",
+                                  "gs://path",
+                                  "type",
+                                  "table",
+                                  "",
+                                  "{\\"source\\":\\"gs://path\\"",
+                                  "type",
+                                  "tensorboard",
+                                  "]}",
+                                ],
+                              ],
+                              "labels": Array [
+                                "col1, col2",
+                              ],
+                              "type": "table",
+                            },
+                          ]
+                        }
+                        maxDimension={400}
+                        title="test run run-with-workflow"
+                      />
+                      <Unknown />
+                    </div>
+                    <Unknown />
+                  </UNDEFINED>
+                  <Unknown
+                    orientation="vertical"
+                  />
+                </div>
+              </div>,
+              "_rendering": false,
+              "_updater": [Circular],
+            },
+          },
+          Symbol(enzyme.__setState__): [Function],
+        }
+      }
+      sectionName="Tensorboard"
+    />
+    <div
+      className="flex outputsRow"
+    >
+      <PlotCard
+        configs={
+          Array [
+            Object {
+              "type": "tensorboard",
+              "url": "gs://path",
+            },
+          ]
+        }
+        key="0"
+        maxDimension={400}
+        title="test run run-with-workflow"
+      />
+      <Component />
+    </div>
+    <Component />
+    <Component
+      orientation="vertical"
+    />
+  </div>
+  <div
+    key="1"
+  >
+    <Component
+      compareComponent={
+        Compare {
+          "_isMounted": true,
+          "context": Object {},
+          "props": Object {
+            "history": Object {
+              "push": [MockFunction],
+            },
+            "location": Object {
+              "pathname": "/compare",
+              "search": "?runlist=run-with-workflow",
+            },
+            "match": Object {
+              "params": Object {},
+            },
+            "toolbarProps": Object {
+              "actions": Array [
+                Object {
+                  "action": [Function],
+                  "icon": [Function],
+                  "id": "expandBtn",
+                  "title": "Expand all",
+                  "tooltip": "Expand all sections",
+                },
+                Object {
+                  "action": [Function],
+                  "icon": [Function],
+                  "id": "collapseBtn",
+                  "title": "Collapse all",
+                  "tooltip": "Collapse all sections",
+                },
+              ],
+              "breadcrumbs": Array [
+                Object {
+                  "displayName": "Experiments",
+                  "href": "/experiments",
+                },
+              ],
+              "pageTitle": "Compare runs",
+            },
+            "updateBanner": [MockFunction] {
+              "calls": Array [
+                Array [
+                  Object {},
+                ],
+              ],
+            },
+            "updateDialog": [MockFunction],
+            "updateSnackbar": [MockFunction],
+            "updateToolbar": [MockFunction] {
+              "calls": Array [
+                Array [
+                  Object {
+                    "actions": Array [
+                      Object {
+                        "action": [Function],
+                        "icon": [Function],
+                        "id": "expandBtn",
+                        "title": "Expand all",
+                        "tooltip": "Expand all sections",
+                      },
+                      Object {
+                        "action": [Function],
+                        "icon": [Function],
+                        "id": "collapseBtn",
+                        "title": "Collapse all",
+                        "tooltip": "Collapse all sections",
+                      },
+                    ],
+                    "breadcrumbs": Array [
+                      Object {
+                        "displayName": "Experiments",
+                        "href": "/experiments",
+                      },
+                    ],
+                    "pageTitle": "Compare runs",
+                  },
+                ],
+              ],
+            },
+          },
+          "refs": Object {},
+          "setState": [Function],
+          "state": Object {
+            "collapseSections": Object {},
+            "fullscreenViewerConfig": null,
+            "paramsCompareProps": Object {
+              "rows": Array [],
+              "xLabels": Array [
+                "test run run-with-workflow",
+              ],
+              "yLabels": Array [],
+            },
+            "runs": Array [
+              Object {
+                "pipeline_runtime": Object {
+                  "workflow_manifest": "{\\"status\\":{\\"nodes\\":{\\"node1\\":{\\"outputs\\":{\\"artifacts\\":[{\\"name\\":\\"mlpipeline-ui-metadata\\",\\"s3\\":{\\"bucket\\":\\"test bucket\\",\\"key\\":\\"test key\\"}}]}}}}}",
+                },
+                "run": Object {
+                  "id": "run-with-workflow",
+                  "name": "test run run-with-workflow",
+                },
+              },
+            ],
+            "selectedIds": Array [
+              "run-with-workflow",
+            ],
+            "viewersMap": Map {
+              "tensorboard" => Array [
+                Object {
+                  "config": Object {
+                    "type": "tensorboard",
+                    "url": "gs://path",
+                  },
+                  "runId": "run-with-workflow",
+                  "runName": "test run run-with-workflow",
+                },
+              ],
+              "table" => Array [
+                Object {
+                  "config": Object {
+                    "data": Array [
+                      Array [
+                        "{\\"outputs\\": [{\\"format\\":\\"csv\\"",
+                        "header",
+                        "[\\"col1",
+                        "col2\\"]",
+                        "source",
+                        "gs://path",
+                        "type",
+                        "table",
+                        "",
+                        "{\\"source\\":\\"gs://path\\"",
+                        "type",
+                        "tensorboard",
+                        "]}",
+                      ],
+                    ],
+                    "labels": Array [
+                      "col1, col2",
+                    ],
+                    "type": "table",
+                  },
+                  "runId": "run-with-workflow",
+                  "runName": "test run run-with-workflow",
+                },
+              ],
+            },
+            "workflowObjects": Array [
+              Object {
+                "status": Object {
+                  "nodes": Object {
+                    "node1": Object {
+                      "outputs": Object {
+                        "artifacts": Array [
+                          Object {
+                            "name": "mlpipeline-ui-metadata",
+                            "s3": Object {
+                              "bucket": "test bucket",
+                              "key": "test key",
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  },
+                },
+              },
+            ],
+          },
+          "updater": Updater {
+            "_callbacks": Array [],
+            "_renderer": ReactShallowRenderer {
+              "_context": Object {},
+              "_element": <Compare
+                history={
+                  Object {
+                    "push": [MockFunction],
+                  }
+                }
+                location={
+                  Object {
+                    "pathname": "/compare",
+                    "search": "?runlist=run-with-workflow",
+                  }
+                }
+                match={
+                  Object {
+                    "params": Object {},
+                  }
+                }
+                toolbarProps={
+                  Object {
+                    "actions": Array [
+                      Object {
+                        "action": [Function],
+                        "icon": [Function],
+                        "id": "expandBtn",
+                        "title": "Expand all",
+                        "tooltip": "Expand all sections",
+                      },
+                      Object {
+                        "action": [Function],
+                        "icon": [Function],
+                        "id": "collapseBtn",
+                        "title": "Collapse all",
+                        "tooltip": "Collapse all sections",
+                      },
+                    ],
+                    "breadcrumbs": Array [
+                      Object {
+                        "displayName": "Experiments",
+                        "href": "/experiments",
+                      },
+                    ],
+                    "pageTitle": "Compare runs",
+                  }
+                }
+                updateBanner={
+                  [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        Object {},
+                      ],
+                    ],
+                  }
+                }
+                updateDialog={[MockFunction]}
+                updateSnackbar={[MockFunction]}
+                updateToolbar={
+                  [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        Object {
+                          "actions": Array [
+                            Object {
+                              "action": [Function],
+                              "icon": [Function],
+                              "id": "expandBtn",
+                              "title": "Expand all",
+                              "tooltip": "Expand all sections",
+                            },
+                            Object {
+                              "action": [Function],
+                              "icon": [Function],
+                              "id": "collapseBtn",
+                              "title": "Collapse all",
+                              "tooltip": "Collapse all sections",
+                            },
+                          ],
+                          "breadcrumbs": Array [
+                            Object {
+                              "displayName": "Experiments",
+                              "href": "/experiments",
+                            },
+                          ],
+                          "pageTitle": "Compare runs",
+                        },
+                      ],
+                    ],
+                  }
+                }
+              />,
+              "_forcedUpdate": false,
+              "_instance": [Circular],
+              "_newState": Object {
+                "collapseSections": Object {},
+                "fullscreenViewerConfig": null,
+                "paramsCompareProps": Object {
+                  "rows": Array [],
+                  "xLabels": Array [
+                    "test run run-with-workflow",
+                  ],
+                  "yLabels": Array [],
+                },
+                "runs": Array [
+                  Object {
+                    "pipeline_runtime": Object {
+                      "workflow_manifest": "{\\"status\\":{\\"nodes\\":{\\"node1\\":{\\"outputs\\":{\\"artifacts\\":[{\\"name\\":\\"mlpipeline-ui-metadata\\",\\"s3\\":{\\"bucket\\":\\"test bucket\\",\\"key\\":\\"test key\\"}}]}}}}}",
+                    },
+                    "run": Object {
+                      "id": "run-with-workflow",
+                      "name": "test run run-with-workflow",
+                    },
+                  },
+                ],
+                "selectedIds": Array [
+                  "run-with-workflow",
+                ],
+                "viewersMap": Map {
+                  "tensorboard" => Array [
+                    Object {
+                      "config": Object {
+                        "type": "tensorboard",
+                        "url": "gs://path",
+                      },
+                      "runId": "run-with-workflow",
+                      "runName": "test run run-with-workflow",
+                    },
+                  ],
+                  "table" => Array [
+                    Object {
+                      "config": Object {
+                        "data": Array [
+                          Array [
+                            "{\\"outputs\\": [{\\"format\\":\\"csv\\"",
+                            "header",
+                            "[\\"col1",
+                            "col2\\"]",
+                            "source",
+                            "gs://path",
+                            "type",
+                            "table",
+                            "",
+                            "{\\"source\\":\\"gs://path\\"",
+                            "type",
+                            "tensorboard",
+                            "]}",
+                          ],
+                        ],
+                        "labels": Array [
+                          "col1, col2",
+                        ],
+                        "type": "table",
+                      },
+                      "runId": "run-with-workflow",
+                      "runName": "test run run-with-workflow",
+                    },
+                  ],
+                },
+                "workflowObjects": Array [
+                  Object {
+                    "status": Object {
+                      "nodes": Object {
+                        "node1": Object {
+                          "outputs": Object {
+                            "artifacts": Array [
+                              Object {
+                                "name": "mlpipeline-ui-metadata",
+                                "s3": Object {
+                                  "bucket": "test bucket",
+                                  "key": "test key",
+                                },
+                              },
+                            ],
+                          },
+                        },
+                      },
+                    },
+                  },
+                ],
+              },
+              "_rendered": <div
+                className="page"
+              >
+                <Unknown
+                  compareComponent={[Circular]}
+                  sectionName="Run overview"
+                />
+                <div
+                  className="noShrink"
+                >
+                  <RunList
+                    disablePaging={true}
+                    history={
+                      Object {
+                        "push": [MockFunction],
+                      }
+                    }
+                    location={
+                      Object {
+                        "pathname": "/compare",
+                        "search": "?runlist=run-with-workflow",
+                      }
+                    }
+                    match={
+                      Object {
+                        "params": Object {},
+                      }
+                    }
+                    onError={[Function]}
+                    onSelectionChange={[Function]}
+                    runIdListMask={
+                      Array [
+                        "run-with-workflow",
+                      ]
+                    }
+                    selectedIds={
+                      Array [
+                        "run-with-workflow",
+                      ]
+                    }
+                    toolbarProps={
+                      Object {
+                        "actions": Array [
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "expandBtn",
+                            "title": "Expand all",
+                            "tooltip": "Expand all sections",
+                          },
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "collapseBtn",
+                            "title": "Collapse all",
+                            "tooltip": "Collapse all sections",
+                          },
+                        ],
+                        "breadcrumbs": Array [
+                          Object {
+                            "displayName": "Experiments",
+                            "href": "/experiments",
+                          },
+                        ],
+                        "pageTitle": "Compare runs",
+                      }
+                    }
+                    updateBanner={
+                      [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            Object {},
+                          ],
+                        ],
+                      }
+                    }
+                    updateDialog={[MockFunction]}
+                    updateSnackbar={[MockFunction]}
+                    updateToolbar={
+                      [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            Object {
+                              "actions": Array [
+                                Object {
+                                  "action": [Function],
+                                  "icon": [Function],
+                                  "id": "expandBtn",
+                                  "title": "Expand all",
+                                  "tooltip": "Expand all sections",
+                                },
+                                Object {
+                                  "action": [Function],
+                                  "icon": [Function],
+                                  "id": "collapseBtn",
+                                  "title": "Collapse all",
+                                  "tooltip": "Collapse all sections",
+                                },
+                              ],
+                              "breadcrumbs": Array [
+                                Object {
+                                  "displayName": "Experiments",
+                                  "href": "/experiments",
+                                },
+                              ],
+                              "pageTitle": "Compare runs",
+                            },
+                          ],
+                        ],
+                      }
+                    }
+                  />
+                </div>
+                <Unknown
+                  orientation="vertical"
+                />
+                <Unknown
+                  compareComponent={[Circular]}
+                  sectionName="Parameters"
+                />
+                <div
+                  className="noShrink outputsRow"
+                >
+                  <Unknown
+                    orientation="vertical"
+                  />
+                  <CompareTable
+                    rows={Array []}
+                    xLabels={
+                      Array [
+                        "test run run-with-workflow",
+                      ]
+                    }
+                    yLabels={Array []}
+                  />
+                  <Unknown />
+                </div>
+                <Unknown
+                  orientation="vertical"
+                />
+                <div>
+                  <Unknown
+                    compareComponent={[Circular]}
+                    sectionName="Tensorboard"
+                  />
+                  <UNDEFINED>
+                    <div
+                      className="flex outputsRow"
+                    >
+                      <PlotCard
+                        configs={
+                          Array [
+                            Object {
+                              "type": "tensorboard",
+                              "url": "gs://path",
+                            },
+                          ]
+                        }
+                        maxDimension={400}
+                        title="test run run-with-workflow"
+                      />
+                      <Unknown />
+                    </div>
+                    <Unknown />
+                  </UNDEFINED>
+                  <Unknown
+                    orientation="vertical"
+                  />
+                </div>
+                <div>
+                  <Unknown
+                    compareComponent={[Circular]}
+                    sectionName="Table"
+                  />
+                  <UNDEFINED>
+                    <div
+                      className="flex outputsRow"
+                    >
+                      <PlotCard
+                        configs={
+                          Array [
+                            Object {
+                              "data": Array [
+                                Array [
+                                  "{\\"outputs\\": [{\\"format\\":\\"csv\\"",
+                                  "header",
+                                  "[\\"col1",
+                                  "col2\\"]",
+                                  "source",
+                                  "gs://path",
+                                  "type",
+                                  "table",
+                                  "",
+                                  "{\\"source\\":\\"gs://path\\"",
+                                  "type",
+                                  "tensorboard",
+                                  "]}",
+                                ],
+                              ],
+                              "labels": Array [
+                                "col1, col2",
+                              ],
+                              "type": "table",
+                            },
+                          ]
+                        }
+                        maxDimension={400}
+                        title="test run run-with-workflow"
+                      />
+                      <Unknown />
+                    </div>
+                    <Unknown />
+                  </UNDEFINED>
+                  <Unknown
+                    orientation="vertical"
+                  />
+                </div>
+              </div>,
+              "_rendering": false,
+              "_updater": [Circular],
+            },
+          },
+          Symbol(enzyme.__setState__): [Function],
+        }
+      }
+      sectionName="Table"
+    />
+    <div
+      className="flex outputsRow"
+    >
+      <PlotCard
+        configs={
+          Array [
+            Object {
+              "data": Array [
+                Array [
+                  "{\\"outputs\\": [{\\"format\\":\\"csv\\"",
+                  "header",
+                  "[\\"col1",
+                  "col2\\"]",
+                  "source",
+                  "gs://path",
+                  "type",
+                  "table",
+                  "",
+                  "{\\"source\\":\\"gs://path\\"",
+                  "type",
+                  "tensorboard",
+                  "]}",
+                ],
+              ],
+              "labels": Array [
+                "col1, col2",
+              ],
+              "type": "table",
+            },
+          ]
+        }
+        key="0"
+        maxDimension={400}
+        title="test run run-with-workflow"
+      />
+      <Component />
+    </div>
+    <Component />
+    <Component
+      orientation="vertical"
+    />
+  </div>
+</div>
+`;
+
+exports[`Compare renders a page with multiple runs 1`] = `
+<div
+  className="page"
+>
+  <Component
+    compareComponent={
+      Compare {
+        "_isMounted": true,
+        "context": Object {},
+        "props": Object {
+          "history": Object {
+            "push": [MockFunction],
+          },
+          "location": Object {
+            "pathname": "/compare",
+            "search": "?runlist=mock-run-1-id,mock-run-2-id,mock-run-3-id",
+          },
+          "match": Object {
+            "params": Object {},
+          },
+          "toolbarProps": Object {
+            "actions": Array [
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "expandBtn",
+                "title": "Expand all",
+                "tooltip": "Expand all sections",
+              },
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "collapseBtn",
+                "title": "Collapse all",
+                "tooltip": "Collapse all sections",
+              },
+            ],
+            "breadcrumbs": Array [
+              Object {
+                "displayName": "Experiments",
+                "href": "/experiments",
+              },
+            ],
+            "pageTitle": "Compare runs",
+          },
+          "updateBanner": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {},
+              ],
+            ],
+          },
+          "updateDialog": [MockFunction],
+          "updateSnackbar": [MockFunction],
+          "updateToolbar": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                },
+              ],
+            ],
+          },
+        },
+        "refs": Object {},
+        "setState": [Function],
+        "state": Object {
+          "collapseSections": Object {},
+          "fullscreenViewerConfig": null,
+          "paramsCompareProps": Object {
+            "rows": Array [],
+            "xLabels": Array [
+              "test run mock-run-1-id",
+              "test run mock-run-2-id",
+              "test run mock-run-3-id",
+            ],
+            "yLabels": Array [],
+          },
+          "runs": Array [
+            Object {
+              "pipeline_runtime": Object {
+                "workflow_manifest": "{}",
+              },
+              "run": Object {
+                "id": "mock-run-1-id",
+                "name": "test run mock-run-1-id",
+              },
+            },
+            Object {
+              "pipeline_runtime": Object {
+                "workflow_manifest": "{}",
+              },
+              "run": Object {
+                "id": "mock-run-2-id",
+                "name": "test run mock-run-2-id",
+              },
+            },
+            Object {
+              "pipeline_runtime": Object {
+                "workflow_manifest": "{}",
+              },
+              "run": Object {
+                "id": "mock-run-3-id",
+                "name": "test run mock-run-3-id",
+              },
+            },
+          ],
+          "selectedIds": Array [
+            "mock-run-1-id",
+            "mock-run-2-id",
+            "mock-run-3-id",
+          ],
+          "viewersMap": Map {},
+          "workflowObjects": Array [
+            Object {},
+            Object {},
+            Object {},
+          ],
+        },
+        "updater": Updater {
+          "_callbacks": Array [],
+          "_renderer": ReactShallowRenderer {
+            "_context": Object {},
+            "_element": <Compare
+              history={
+                Object {
+                  "push": [MockFunction],
+                }
+              }
+              location={
+                Object {
+                  "pathname": "/compare",
+                  "search": "?runlist=mock-run-1-id,mock-run-2-id,mock-run-3-id",
+                }
+              }
+              match={
+                Object {
+                  "params": Object {},
+                }
+              }
+              toolbarProps={
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                }
+              }
+              updateBanner={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {},
+                    ],
+                  ],
+                }
+              }
+              updateDialog={[MockFunction]}
+              updateSnackbar={[MockFunction]}
+              updateToolbar={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {
+                        "actions": Array [
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "expandBtn",
+                            "title": "Expand all",
+                            "tooltip": "Expand all sections",
+                          },
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "collapseBtn",
+                            "title": "Collapse all",
+                            "tooltip": "Collapse all sections",
+                          },
+                        ],
+                        "breadcrumbs": Array [
+                          Object {
+                            "displayName": "Experiments",
+                            "href": "/experiments",
+                          },
+                        ],
+                        "pageTitle": "Compare runs",
+                      },
+                    ],
+                  ],
+                }
+              }
+            />,
+            "_forcedUpdate": false,
+            "_instance": [Circular],
+            "_newState": Object {
+              "collapseSections": Object {},
+              "fullscreenViewerConfig": null,
+              "paramsCompareProps": Object {
+                "rows": Array [],
+                "xLabels": Array [
+                  "test run mock-run-1-id",
+                  "test run mock-run-2-id",
+                  "test run mock-run-3-id",
+                ],
+                "yLabels": Array [],
+              },
+              "runs": Array [
+                Object {
+                  "pipeline_runtime": Object {
+                    "workflow_manifest": "{}",
+                  },
+                  "run": Object {
+                    "id": "mock-run-1-id",
+                    "name": "test run mock-run-1-id",
+                  },
+                },
+                Object {
+                  "pipeline_runtime": Object {
+                    "workflow_manifest": "{}",
+                  },
+                  "run": Object {
+                    "id": "mock-run-2-id",
+                    "name": "test run mock-run-2-id",
+                  },
+                },
+                Object {
+                  "pipeline_runtime": Object {
+                    "workflow_manifest": "{}",
+                  },
+                  "run": Object {
+                    "id": "mock-run-3-id",
+                    "name": "test run mock-run-3-id",
+                  },
+                },
+              ],
+              "selectedIds": Array [
+                "mock-run-1-id",
+                "mock-run-2-id",
+                "mock-run-3-id",
+              ],
+              "viewersMap": Map {},
+              "workflowObjects": Array [
+                Object {},
+                Object {},
+                Object {},
+              ],
+            },
+            "_rendered": <div
+              className="page"
+            >
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Run overview"
+              />
+              <div
+                className="noShrink"
+              >
+                <RunList
+                  disablePaging={true}
+                  history={
+                    Object {
+                      "push": [MockFunction],
+                    }
+                  }
+                  location={
+                    Object {
+                      "pathname": "/compare",
+                      "search": "?runlist=mock-run-1-id,mock-run-2-id,mock-run-3-id",
+                    }
+                  }
+                  match={
+                    Object {
+                      "params": Object {},
+                    }
+                  }
+                  onError={[Function]}
+                  onSelectionChange={[Function]}
+                  runIdListMask={
+                    Array [
+                      "mock-run-1-id",
+                      "mock-run-2-id",
+                      "mock-run-3-id",
+                    ]
+                  }
+                  selectedIds={
+                    Array [
+                      "mock-run-1-id",
+                      "mock-run-2-id",
+                      "mock-run-3-id",
+                    ]
+                  }
+                  toolbarProps={
+                    Object {
+                      "actions": Array [
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "expandBtn",
+                          "title": "Expand all",
+                          "tooltip": "Expand all sections",
+                        },
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "collapseBtn",
+                          "title": "Collapse all",
+                          "tooltip": "Collapse all sections",
+                        },
+                      ],
+                      "breadcrumbs": Array [
+                        Object {
+                          "displayName": "Experiments",
+                          "href": "/experiments",
+                        },
+                      ],
+                      "pageTitle": "Compare runs",
+                    }
+                  }
+                  updateBanner={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {},
+                        ],
+                      ],
+                    }
+                  }
+                  updateDialog={[MockFunction]}
+                  updateSnackbar={[MockFunction]}
+                  updateToolbar={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {
+                            "actions": Array [
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "expandBtn",
+                                "title": "Expand all",
+                                "tooltip": "Expand all sections",
+                              },
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "collapseBtn",
+                                "title": "Collapse all",
+                                "tooltip": "Collapse all sections",
+                              },
+                            ],
+                            "breadcrumbs": Array [
+                              Object {
+                                "displayName": "Experiments",
+                                "href": "/experiments",
+                              },
+                            ],
+                            "pageTitle": "Compare runs",
+                          },
+                        ],
+                      ],
+                    }
+                  }
+                />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Parameters"
+              />
+              <div
+                className="noShrink outputsRow"
+              >
+                <Unknown
+                  orientation="vertical"
+                />
+                <CompareTable
+                  rows={Array []}
+                  xLabels={
+                    Array [
+                      "test run mock-run-1-id",
+                      "test run mock-run-2-id",
+                      "test run mock-run-3-id",
+                    ]
+                  }
+                  yLabels={Array []}
+                />
+                <Unknown />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+            </div>,
+            "_rendering": false,
+            "_updater": [Circular],
+          },
+        },
+        Symbol(enzyme.__setState__): [Function],
+      }
+    }
+    sectionName="Run overview"
+  />
+  <div
+    className="noShrink"
+  >
+    <RunList
+      disablePaging={true}
+      history={
+        Object {
+          "push": [MockFunction],
+        }
+      }
+      location={
+        Object {
+          "pathname": "/compare",
+          "search": "?runlist=mock-run-1-id,mock-run-2-id,mock-run-3-id",
+        }
+      }
+      match={
+        Object {
+          "params": Object {},
+        }
+      }
+      onError={[Function]}
+      onSelectionChange={[Function]}
+      runIdListMask={
+        Array [
+          "mock-run-1-id",
+          "mock-run-2-id",
+          "mock-run-3-id",
+        ]
+      }
+      selectedIds={
+        Array [
+          "mock-run-1-id",
+          "mock-run-2-id",
+          "mock-run-3-id",
+        ]
+      }
+      toolbarProps={
+        Object {
+          "actions": Array [
+            Object {
+              "action": [Function],
+              "icon": [Function],
+              "id": "expandBtn",
+              "title": "Expand all",
+              "tooltip": "Expand all sections",
+            },
+            Object {
+              "action": [Function],
+              "icon": [Function],
+              "id": "collapseBtn",
+              "title": "Collapse all",
+              "tooltip": "Collapse all sections",
+            },
+          ],
+          "breadcrumbs": Array [
+            Object {
+              "displayName": "Experiments",
+              "href": "/experiments",
+            },
+          ],
+          "pageTitle": "Compare runs",
+        }
+      }
+      updateBanner={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {},
+            ],
+          ],
+        }
+      }
+      updateDialog={[MockFunction]}
+      updateSnackbar={[MockFunction]}
+      updateToolbar={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {
+                "actions": Array [
+                  Object {
+                    "action": [Function],
+                    "icon": [Function],
+                    "id": "expandBtn",
+                    "title": "Expand all",
+                    "tooltip": "Expand all sections",
+                  },
+                  Object {
+                    "action": [Function],
+                    "icon": [Function],
+                    "id": "collapseBtn",
+                    "title": "Collapse all",
+                    "tooltip": "Collapse all sections",
+                  },
+                ],
+                "breadcrumbs": Array [
+                  Object {
+                    "displayName": "Experiments",
+                    "href": "/experiments",
+                  },
+                ],
+                "pageTitle": "Compare runs",
+              },
+            ],
+          ],
+        }
+      }
+    />
+  </div>
+  <Component
+    orientation="vertical"
+  />
+  <Component
+    compareComponent={
+      Compare {
+        "_isMounted": true,
+        "context": Object {},
+        "props": Object {
+          "history": Object {
+            "push": [MockFunction],
+          },
+          "location": Object {
+            "pathname": "/compare",
+            "search": "?runlist=mock-run-1-id,mock-run-2-id,mock-run-3-id",
+          },
+          "match": Object {
+            "params": Object {},
+          },
+          "toolbarProps": Object {
+            "actions": Array [
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "expandBtn",
+                "title": "Expand all",
+                "tooltip": "Expand all sections",
+              },
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "collapseBtn",
+                "title": "Collapse all",
+                "tooltip": "Collapse all sections",
+              },
+            ],
+            "breadcrumbs": Array [
+              Object {
+                "displayName": "Experiments",
+                "href": "/experiments",
+              },
+            ],
+            "pageTitle": "Compare runs",
+          },
+          "updateBanner": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {},
+              ],
+            ],
+          },
+          "updateDialog": [MockFunction],
+          "updateSnackbar": [MockFunction],
+          "updateToolbar": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                },
+              ],
+            ],
+          },
+        },
+        "refs": Object {},
+        "setState": [Function],
+        "state": Object {
+          "collapseSections": Object {},
+          "fullscreenViewerConfig": null,
+          "paramsCompareProps": Object {
+            "rows": Array [],
+            "xLabels": Array [
+              "test run mock-run-1-id",
+              "test run mock-run-2-id",
+              "test run mock-run-3-id",
+            ],
+            "yLabels": Array [],
+          },
+          "runs": Array [
+            Object {
+              "pipeline_runtime": Object {
+                "workflow_manifest": "{}",
+              },
+              "run": Object {
+                "id": "mock-run-1-id",
+                "name": "test run mock-run-1-id",
+              },
+            },
+            Object {
+              "pipeline_runtime": Object {
+                "workflow_manifest": "{}",
+              },
+              "run": Object {
+                "id": "mock-run-2-id",
+                "name": "test run mock-run-2-id",
+              },
+            },
+            Object {
+              "pipeline_runtime": Object {
+                "workflow_manifest": "{}",
+              },
+              "run": Object {
+                "id": "mock-run-3-id",
+                "name": "test run mock-run-3-id",
+              },
+            },
+          ],
+          "selectedIds": Array [
+            "mock-run-1-id",
+            "mock-run-2-id",
+            "mock-run-3-id",
+          ],
+          "viewersMap": Map {},
+          "workflowObjects": Array [
+            Object {},
+            Object {},
+            Object {},
+          ],
+        },
+        "updater": Updater {
+          "_callbacks": Array [],
+          "_renderer": ReactShallowRenderer {
+            "_context": Object {},
+            "_element": <Compare
+              history={
+                Object {
+                  "push": [MockFunction],
+                }
+              }
+              location={
+                Object {
+                  "pathname": "/compare",
+                  "search": "?runlist=mock-run-1-id,mock-run-2-id,mock-run-3-id",
+                }
+              }
+              match={
+                Object {
+                  "params": Object {},
+                }
+              }
+              toolbarProps={
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                }
+              }
+              updateBanner={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {},
+                    ],
+                  ],
+                }
+              }
+              updateDialog={[MockFunction]}
+              updateSnackbar={[MockFunction]}
+              updateToolbar={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {
+                        "actions": Array [
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "expandBtn",
+                            "title": "Expand all",
+                            "tooltip": "Expand all sections",
+                          },
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "collapseBtn",
+                            "title": "Collapse all",
+                            "tooltip": "Collapse all sections",
+                          },
+                        ],
+                        "breadcrumbs": Array [
+                          Object {
+                            "displayName": "Experiments",
+                            "href": "/experiments",
+                          },
+                        ],
+                        "pageTitle": "Compare runs",
+                      },
+                    ],
+                  ],
+                }
+              }
+            />,
+            "_forcedUpdate": false,
+            "_instance": [Circular],
+            "_newState": Object {
+              "collapseSections": Object {},
+              "fullscreenViewerConfig": null,
+              "paramsCompareProps": Object {
+                "rows": Array [],
+                "xLabels": Array [
+                  "test run mock-run-1-id",
+                  "test run mock-run-2-id",
+                  "test run mock-run-3-id",
+                ],
+                "yLabels": Array [],
+              },
+              "runs": Array [
+                Object {
+                  "pipeline_runtime": Object {
+                    "workflow_manifest": "{}",
+                  },
+                  "run": Object {
+                    "id": "mock-run-1-id",
+                    "name": "test run mock-run-1-id",
+                  },
+                },
+                Object {
+                  "pipeline_runtime": Object {
+                    "workflow_manifest": "{}",
+                  },
+                  "run": Object {
+                    "id": "mock-run-2-id",
+                    "name": "test run mock-run-2-id",
+                  },
+                },
+                Object {
+                  "pipeline_runtime": Object {
+                    "workflow_manifest": "{}",
+                  },
+                  "run": Object {
+                    "id": "mock-run-3-id",
+                    "name": "test run mock-run-3-id",
+                  },
+                },
+              ],
+              "selectedIds": Array [
+                "mock-run-1-id",
+                "mock-run-2-id",
+                "mock-run-3-id",
+              ],
+              "viewersMap": Map {},
+              "workflowObjects": Array [
+                Object {},
+                Object {},
+                Object {},
+              ],
+            },
+            "_rendered": <div
+              className="page"
+            >
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Run overview"
+              />
+              <div
+                className="noShrink"
+              >
+                <RunList
+                  disablePaging={true}
+                  history={
+                    Object {
+                      "push": [MockFunction],
+                    }
+                  }
+                  location={
+                    Object {
+                      "pathname": "/compare",
+                      "search": "?runlist=mock-run-1-id,mock-run-2-id,mock-run-3-id",
+                    }
+                  }
+                  match={
+                    Object {
+                      "params": Object {},
+                    }
+                  }
+                  onError={[Function]}
+                  onSelectionChange={[Function]}
+                  runIdListMask={
+                    Array [
+                      "mock-run-1-id",
+                      "mock-run-2-id",
+                      "mock-run-3-id",
+                    ]
+                  }
+                  selectedIds={
+                    Array [
+                      "mock-run-1-id",
+                      "mock-run-2-id",
+                      "mock-run-3-id",
+                    ]
+                  }
+                  toolbarProps={
+                    Object {
+                      "actions": Array [
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "expandBtn",
+                          "title": "Expand all",
+                          "tooltip": "Expand all sections",
+                        },
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "collapseBtn",
+                          "title": "Collapse all",
+                          "tooltip": "Collapse all sections",
+                        },
+                      ],
+                      "breadcrumbs": Array [
+                        Object {
+                          "displayName": "Experiments",
+                          "href": "/experiments",
+                        },
+                      ],
+                      "pageTitle": "Compare runs",
+                    }
+                  }
+                  updateBanner={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {},
+                        ],
+                      ],
+                    }
+                  }
+                  updateDialog={[MockFunction]}
+                  updateSnackbar={[MockFunction]}
+                  updateToolbar={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {
+                            "actions": Array [
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "expandBtn",
+                                "title": "Expand all",
+                                "tooltip": "Expand all sections",
+                              },
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "collapseBtn",
+                                "title": "Collapse all",
+                                "tooltip": "Collapse all sections",
+                              },
+                            ],
+                            "breadcrumbs": Array [
+                              Object {
+                                "displayName": "Experiments",
+                                "href": "/experiments",
+                              },
+                            ],
+                            "pageTitle": "Compare runs",
+                          },
+                        ],
+                      ],
+                    }
+                  }
+                />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Parameters"
+              />
+              <div
+                className="noShrink outputsRow"
+              >
+                <Unknown
+                  orientation="vertical"
+                />
+                <CompareTable
+                  rows={Array []}
+                  xLabels={
+                    Array [
+                      "test run mock-run-1-id",
+                      "test run mock-run-2-id",
+                      "test run mock-run-3-id",
+                    ]
+                  }
+                  yLabels={Array []}
+                />
+                <Unknown />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+            </div>,
+            "_rendering": false,
+            "_updater": [Circular],
+          },
+        },
+        Symbol(enzyme.__setState__): [Function],
+      }
+    }
+    sectionName="Parameters"
+  />
+  <div
+    className="noShrink outputsRow"
+  >
+    <Component
+      orientation="vertical"
+    />
+    <CompareTable
+      rows={Array []}
+      xLabels={
+        Array [
+          "test run mock-run-1-id",
+          "test run mock-run-2-id",
+          "test run mock-run-3-id",
+        ]
+      }
+      yLabels={Array []}
+    />
+    <Component />
+  </div>
+  <Component
+    orientation="vertical"
+  />
+</div>
+`;
+
+exports[`Compare renders a page with no runs 1`] = `
+<div
+  className="page"
+>
+  <Component
+    compareComponent={
+      Compare {
+        "_isMounted": true,
+        "context": Object {},
+        "props": Object {
+          "history": Object {
+            "push": [MockFunction],
+          },
+          "location": Object {
+            "pathname": "/compare",
+            "search": "",
+          },
+          "match": Object {
+            "params": Object {},
+          },
+          "toolbarProps": Object {
+            "actions": Array [
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "expandBtn",
+                "title": "Expand all",
+                "tooltip": "Expand all sections",
+              },
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "collapseBtn",
+                "title": "Collapse all",
+                "tooltip": "Collapse all sections",
+              },
+            ],
+            "breadcrumbs": Array [
+              Object {
+                "displayName": "Experiments",
+                "href": "/experiments",
+              },
+            ],
+            "pageTitle": "Compare runs",
+          },
+          "updateBanner": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {},
+              ],
+            ],
+          },
+          "updateDialog": [MockFunction],
+          "updateSnackbar": [MockFunction],
+          "updateToolbar": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                },
+              ],
+            ],
+          },
+        },
+        "refs": Object {},
+        "setState": [Function],
+        "state": Object {
+          "collapseSections": Object {},
+          "fullscreenViewerConfig": null,
+          "paramsCompareProps": Object {
+            "rows": Array [],
+            "xLabels": Array [],
+            "yLabels": Array [],
+          },
+          "runs": Array [],
+          "selectedIds": Array [],
+          "viewersMap": Map {},
+          "workflowObjects": Array [],
+        },
+        "updater": Updater {
+          "_callbacks": Array [],
+          "_renderer": ReactShallowRenderer {
+            "_context": Object {},
+            "_element": <Compare
+              history={
+                Object {
+                  "push": [MockFunction],
+                }
+              }
+              location={
+                Object {
+                  "pathname": "/compare",
+                  "search": "",
+                }
+              }
+              match={
+                Object {
+                  "params": Object {},
+                }
+              }
+              toolbarProps={
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                }
+              }
+              updateBanner={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {},
+                    ],
+                  ],
+                }
+              }
+              updateDialog={[MockFunction]}
+              updateSnackbar={[MockFunction]}
+              updateToolbar={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {
+                        "actions": Array [
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "expandBtn",
+                            "title": "Expand all",
+                            "tooltip": "Expand all sections",
+                          },
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "collapseBtn",
+                            "title": "Collapse all",
+                            "tooltip": "Collapse all sections",
+                          },
+                        ],
+                        "breadcrumbs": Array [
+                          Object {
+                            "displayName": "Experiments",
+                            "href": "/experiments",
+                          },
+                        ],
+                        "pageTitle": "Compare runs",
+                      },
+                    ],
+                  ],
+                }
+              }
+            />,
+            "_forcedUpdate": false,
+            "_instance": [Circular],
+            "_newState": Object {
+              "collapseSections": Object {},
+              "fullscreenViewerConfig": null,
+              "paramsCompareProps": Object {
+                "rows": Array [],
+                "xLabels": Array [],
+                "yLabels": Array [],
+              },
+              "runs": Array [],
+              "selectedIds": Array [],
+              "viewersMap": Map {},
+              "workflowObjects": Array [],
+            },
+            "_rendered": <div
+              className="page"
+            >
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Run overview"
+              />
+              <div
+                className="noShrink"
+              >
+                <RunList
+                  disablePaging={true}
+                  history={
+                    Object {
+                      "push": [MockFunction],
+                    }
+                  }
+                  location={
+                    Object {
+                      "pathname": "/compare",
+                      "search": "",
+                    }
+                  }
+                  match={
+                    Object {
+                      "params": Object {},
+                    }
+                  }
+                  onError={[Function]}
+                  onSelectionChange={[Function]}
+                  runIdListMask={Array []}
+                  selectedIds={Array []}
+                  toolbarProps={
+                    Object {
+                      "actions": Array [
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "expandBtn",
+                          "title": "Expand all",
+                          "tooltip": "Expand all sections",
+                        },
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "collapseBtn",
+                          "title": "Collapse all",
+                          "tooltip": "Collapse all sections",
+                        },
+                      ],
+                      "breadcrumbs": Array [
+                        Object {
+                          "displayName": "Experiments",
+                          "href": "/experiments",
+                        },
+                      ],
+                      "pageTitle": "Compare runs",
+                    }
+                  }
+                  updateBanner={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {},
+                        ],
+                      ],
+                    }
+                  }
+                  updateDialog={[MockFunction]}
+                  updateSnackbar={[MockFunction]}
+                  updateToolbar={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {
+                            "actions": Array [
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "expandBtn",
+                                "title": "Expand all",
+                                "tooltip": "Expand all sections",
+                              },
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "collapseBtn",
+                                "title": "Collapse all",
+                                "tooltip": "Collapse all sections",
+                              },
+                            ],
+                            "breadcrumbs": Array [
+                              Object {
+                                "displayName": "Experiments",
+                                "href": "/experiments",
+                              },
+                            ],
+                            "pageTitle": "Compare runs",
+                          },
+                        ],
+                      ],
+                    }
+                  }
+                />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Parameters"
+              />
+              <div
+                className="noShrink outputsRow"
+              >
+                <Unknown
+                  orientation="vertical"
+                />
+                <CompareTable
+                  rows={Array []}
+                  xLabels={Array []}
+                  yLabels={Array []}
+                />
+                <Unknown />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+            </div>,
+            "_rendering": false,
+            "_updater": [Circular],
+          },
+        },
+        Symbol(enzyme.__setState__): [Function],
+      }
+    }
+    sectionName="Run overview"
+  />
+  <div
+    className="noShrink"
+  >
+    <RunList
+      disablePaging={true}
+      history={
+        Object {
+          "push": [MockFunction],
+        }
+      }
+      location={
+        Object {
+          "pathname": "/compare",
+          "search": "",
+        }
+      }
+      match={
+        Object {
+          "params": Object {},
+        }
+      }
+      onError={[Function]}
+      onSelectionChange={[Function]}
+      runIdListMask={Array []}
+      selectedIds={Array []}
+      toolbarProps={
+        Object {
+          "actions": Array [
+            Object {
+              "action": [Function],
+              "icon": [Function],
+              "id": "expandBtn",
+              "title": "Expand all",
+              "tooltip": "Expand all sections",
+            },
+            Object {
+              "action": [Function],
+              "icon": [Function],
+              "id": "collapseBtn",
+              "title": "Collapse all",
+              "tooltip": "Collapse all sections",
+            },
+          ],
+          "breadcrumbs": Array [
+            Object {
+              "displayName": "Experiments",
+              "href": "/experiments",
+            },
+          ],
+          "pageTitle": "Compare runs",
+        }
+      }
+      updateBanner={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {},
+            ],
+          ],
+        }
+      }
+      updateDialog={[MockFunction]}
+      updateSnackbar={[MockFunction]}
+      updateToolbar={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {
+                "actions": Array [
+                  Object {
+                    "action": [Function],
+                    "icon": [Function],
+                    "id": "expandBtn",
+                    "title": "Expand all",
+                    "tooltip": "Expand all sections",
+                  },
+                  Object {
+                    "action": [Function],
+                    "icon": [Function],
+                    "id": "collapseBtn",
+                    "title": "Collapse all",
+                    "tooltip": "Collapse all sections",
+                  },
+                ],
+                "breadcrumbs": Array [
+                  Object {
+                    "displayName": "Experiments",
+                    "href": "/experiments",
+                  },
+                ],
+                "pageTitle": "Compare runs",
+              },
+            ],
+          ],
+        }
+      }
+    />
+  </div>
+  <Component
+    orientation="vertical"
+  />
+  <Component
+    compareComponent={
+      Compare {
+        "_isMounted": true,
+        "context": Object {},
+        "props": Object {
+          "history": Object {
+            "push": [MockFunction],
+          },
+          "location": Object {
+            "pathname": "/compare",
+            "search": "",
+          },
+          "match": Object {
+            "params": Object {},
+          },
+          "toolbarProps": Object {
+            "actions": Array [
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "expandBtn",
+                "title": "Expand all",
+                "tooltip": "Expand all sections",
+              },
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "collapseBtn",
+                "title": "Collapse all",
+                "tooltip": "Collapse all sections",
+              },
+            ],
+            "breadcrumbs": Array [
+              Object {
+                "displayName": "Experiments",
+                "href": "/experiments",
+              },
+            ],
+            "pageTitle": "Compare runs",
+          },
+          "updateBanner": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {},
+              ],
+            ],
+          },
+          "updateDialog": [MockFunction],
+          "updateSnackbar": [MockFunction],
+          "updateToolbar": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                },
+              ],
+            ],
+          },
+        },
+        "refs": Object {},
+        "setState": [Function],
+        "state": Object {
+          "collapseSections": Object {},
+          "fullscreenViewerConfig": null,
+          "paramsCompareProps": Object {
+            "rows": Array [],
+            "xLabels": Array [],
+            "yLabels": Array [],
+          },
+          "runs": Array [],
+          "selectedIds": Array [],
+          "viewersMap": Map {},
+          "workflowObjects": Array [],
+        },
+        "updater": Updater {
+          "_callbacks": Array [],
+          "_renderer": ReactShallowRenderer {
+            "_context": Object {},
+            "_element": <Compare
+              history={
+                Object {
+                  "push": [MockFunction],
+                }
+              }
+              location={
+                Object {
+                  "pathname": "/compare",
+                  "search": "",
+                }
+              }
+              match={
+                Object {
+                  "params": Object {},
+                }
+              }
+              toolbarProps={
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                }
+              }
+              updateBanner={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {},
+                    ],
+                  ],
+                }
+              }
+              updateDialog={[MockFunction]}
+              updateSnackbar={[MockFunction]}
+              updateToolbar={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {
+                        "actions": Array [
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "expandBtn",
+                            "title": "Expand all",
+                            "tooltip": "Expand all sections",
+                          },
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "collapseBtn",
+                            "title": "Collapse all",
+                            "tooltip": "Collapse all sections",
+                          },
+                        ],
+                        "breadcrumbs": Array [
+                          Object {
+                            "displayName": "Experiments",
+                            "href": "/experiments",
+                          },
+                        ],
+                        "pageTitle": "Compare runs",
+                      },
+                    ],
+                  ],
+                }
+              }
+            />,
+            "_forcedUpdate": false,
+            "_instance": [Circular],
+            "_newState": Object {
+              "collapseSections": Object {},
+              "fullscreenViewerConfig": null,
+              "paramsCompareProps": Object {
+                "rows": Array [],
+                "xLabels": Array [],
+                "yLabels": Array [],
+              },
+              "runs": Array [],
+              "selectedIds": Array [],
+              "viewersMap": Map {},
+              "workflowObjects": Array [],
+            },
+            "_rendered": <div
+              className="page"
+            >
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Run overview"
+              />
+              <div
+                className="noShrink"
+              >
+                <RunList
+                  disablePaging={true}
+                  history={
+                    Object {
+                      "push": [MockFunction],
+                    }
+                  }
+                  location={
+                    Object {
+                      "pathname": "/compare",
+                      "search": "",
+                    }
+                  }
+                  match={
+                    Object {
+                      "params": Object {},
+                    }
+                  }
+                  onError={[Function]}
+                  onSelectionChange={[Function]}
+                  runIdListMask={Array []}
+                  selectedIds={Array []}
+                  toolbarProps={
+                    Object {
+                      "actions": Array [
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "expandBtn",
+                          "title": "Expand all",
+                          "tooltip": "Expand all sections",
+                        },
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "collapseBtn",
+                          "title": "Collapse all",
+                          "tooltip": "Collapse all sections",
+                        },
+                      ],
+                      "breadcrumbs": Array [
+                        Object {
+                          "displayName": "Experiments",
+                          "href": "/experiments",
+                        },
+                      ],
+                      "pageTitle": "Compare runs",
+                    }
+                  }
+                  updateBanner={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {},
+                        ],
+                      ],
+                    }
+                  }
+                  updateDialog={[MockFunction]}
+                  updateSnackbar={[MockFunction]}
+                  updateToolbar={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {
+                            "actions": Array [
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "expandBtn",
+                                "title": "Expand all",
+                                "tooltip": "Expand all sections",
+                              },
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "collapseBtn",
+                                "title": "Collapse all",
+                                "tooltip": "Collapse all sections",
+                              },
+                            ],
+                            "breadcrumbs": Array [
+                              Object {
+                                "displayName": "Experiments",
+                                "href": "/experiments",
+                              },
+                            ],
+                            "pageTitle": "Compare runs",
+                          },
+                        ],
+                      ],
+                    }
+                  }
+                />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Parameters"
+              />
+              <div
+                className="noShrink outputsRow"
+              >
+                <Unknown
+                  orientation="vertical"
+                />
+                <CompareTable
+                  rows={Array []}
+                  xLabels={Array []}
+                  yLabels={Array []}
+                />
+                <Unknown />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+            </div>,
+            "_rendering": false,
+            "_updater": [Circular],
+          },
+        },
+        Symbol(enzyme.__setState__): [Function],
+      }
+    }
+    sectionName="Parameters"
+  />
+  <div
+    className="noShrink outputsRow"
+  >
+    <Component
+      orientation="vertical"
+    />
+    <CompareTable
+      rows={Array []}
+      xLabels={Array []}
+      yLabels={Array []}
+    />
+    <Component />
+  </div>
+  <Component
+    orientation="vertical"
+  />
+</div>
+`;
+
+exports[`Compare renders a page with no runs 2`] = `
+<div
+  className="page"
+>
+  <Component
+    compareComponent={
+      Compare {
+        "_isMounted": true,
+        "context": Object {},
+        "props": Object {
+          "history": Object {
+            "push": [MockFunction],
+          },
+          "location": Object {
+            "pathname": "/compare",
+            "search": "",
+          },
+          "match": Object {
+            "params": Object {},
+          },
+          "toolbarProps": Object {
+            "actions": Array [
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "expandBtn",
+                "title": "Expand all",
+                "tooltip": "Expand all sections",
+              },
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "collapseBtn",
+                "title": "Collapse all",
+                "tooltip": "Collapse all sections",
+              },
+            ],
+            "breadcrumbs": Array [
+              Object {
+                "displayName": "Experiments",
+                "href": "/experiments",
+              },
+            ],
+            "pageTitle": "Compare runs",
+          },
+          "updateBanner": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {},
+              ],
+            ],
+          },
+          "updateDialog": [MockFunction],
+          "updateSnackbar": [MockFunction],
+          "updateToolbar": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                },
+              ],
+            ],
+          },
+        },
+        "refs": Object {},
+        "setState": [Function],
+        "state": Object {
+          "collapseSections": Object {},
+          "fullscreenViewerConfig": null,
+          "paramsCompareProps": Object {
+            "rows": Array [],
+            "xLabels": Array [],
+            "yLabels": Array [],
+          },
+          "runs": Array [],
+          "selectedIds": Array [],
+          "viewersMap": Map {},
+          "workflowObjects": Array [],
+        },
+        "updater": Updater {
+          "_callbacks": Array [],
+          "_renderer": ReactShallowRenderer {
+            "_context": Object {},
+            "_element": <Compare
+              history={
+                Object {
+                  "push": [MockFunction],
+                }
+              }
+              location={
+                Object {
+                  "pathname": "/compare",
+                  "search": "",
+                }
+              }
+              match={
+                Object {
+                  "params": Object {},
+                }
+              }
+              toolbarProps={
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                }
+              }
+              updateBanner={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {},
+                    ],
+                  ],
+                }
+              }
+              updateDialog={[MockFunction]}
+              updateSnackbar={[MockFunction]}
+              updateToolbar={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {
+                        "actions": Array [
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "expandBtn",
+                            "title": "Expand all",
+                            "tooltip": "Expand all sections",
+                          },
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "collapseBtn",
+                            "title": "Collapse all",
+                            "tooltip": "Collapse all sections",
+                          },
+                        ],
+                        "breadcrumbs": Array [
+                          Object {
+                            "displayName": "Experiments",
+                            "href": "/experiments",
+                          },
+                        ],
+                        "pageTitle": "Compare runs",
+                      },
+                    ],
+                  ],
+                }
+              }
+            />,
+            "_forcedUpdate": false,
+            "_instance": [Circular],
+            "_newState": Object {
+              "collapseSections": Object {},
+              "fullscreenViewerConfig": null,
+              "paramsCompareProps": Object {
+                "rows": Array [],
+                "xLabels": Array [],
+                "yLabels": Array [],
+              },
+              "runs": Array [],
+              "selectedIds": Array [],
+              "viewersMap": Map {},
+              "workflowObjects": Array [],
+            },
+            "_rendered": <div
+              className="page"
+            >
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Run overview"
+              />
+              <div
+                className="noShrink"
+              >
+                <RunList
+                  disablePaging={true}
+                  history={
+                    Object {
+                      "push": [MockFunction],
+                    }
+                  }
+                  location={
+                    Object {
+                      "pathname": "/compare",
+                      "search": "",
+                    }
+                  }
+                  match={
+                    Object {
+                      "params": Object {},
+                    }
+                  }
+                  onError={[Function]}
+                  onSelectionChange={[Function]}
+                  runIdListMask={Array []}
+                  selectedIds={Array []}
+                  toolbarProps={
+                    Object {
+                      "actions": Array [
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "expandBtn",
+                          "title": "Expand all",
+                          "tooltip": "Expand all sections",
+                        },
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "collapseBtn",
+                          "title": "Collapse all",
+                          "tooltip": "Collapse all sections",
+                        },
+                      ],
+                      "breadcrumbs": Array [
+                        Object {
+                          "displayName": "Experiments",
+                          "href": "/experiments",
+                        },
+                      ],
+                      "pageTitle": "Compare runs",
+                    }
+                  }
+                  updateBanner={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {},
+                        ],
+                      ],
+                    }
+                  }
+                  updateDialog={[MockFunction]}
+                  updateSnackbar={[MockFunction]}
+                  updateToolbar={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {
+                            "actions": Array [
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "expandBtn",
+                                "title": "Expand all",
+                                "tooltip": "Expand all sections",
+                              },
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "collapseBtn",
+                                "title": "Collapse all",
+                                "tooltip": "Collapse all sections",
+                              },
+                            ],
+                            "breadcrumbs": Array [
+                              Object {
+                                "displayName": "Experiments",
+                                "href": "/experiments",
+                              },
+                            ],
+                            "pageTitle": "Compare runs",
+                          },
+                        ],
+                      ],
+                    }
+                  }
+                />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Parameters"
+              />
+              <div
+                className="noShrink outputsRow"
+              >
+                <Unknown
+                  orientation="vertical"
+                />
+                <CompareTable
+                  rows={Array []}
+                  xLabels={Array []}
+                  yLabels={Array []}
+                />
+                <Unknown />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+            </div>,
+            "_rendering": false,
+            "_updater": [Circular],
+          },
+        },
+        Symbol(enzyme.__setState__): [Function],
+      }
+    }
+    sectionName="Run overview"
+  />
+  <div
+    className="noShrink"
+  >
+    <RunList
+      disablePaging={true}
+      history={
+        Object {
+          "push": [MockFunction],
+        }
+      }
+      location={
+        Object {
+          "pathname": "/compare",
+          "search": "",
+        }
+      }
+      match={
+        Object {
+          "params": Object {},
+        }
+      }
+      onError={[Function]}
+      onSelectionChange={[Function]}
+      runIdListMask={Array []}
+      selectedIds={Array []}
+      toolbarProps={
+        Object {
+          "actions": Array [
+            Object {
+              "action": [Function],
+              "icon": [Function],
+              "id": "expandBtn",
+              "title": "Expand all",
+              "tooltip": "Expand all sections",
+            },
+            Object {
+              "action": [Function],
+              "icon": [Function],
+              "id": "collapseBtn",
+              "title": "Collapse all",
+              "tooltip": "Collapse all sections",
+            },
+          ],
+          "breadcrumbs": Array [
+            Object {
+              "displayName": "Experiments",
+              "href": "/experiments",
+            },
+          ],
+          "pageTitle": "Compare runs",
+        }
+      }
+      updateBanner={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {},
+            ],
+          ],
+        }
+      }
+      updateDialog={[MockFunction]}
+      updateSnackbar={[MockFunction]}
+      updateToolbar={
+        [MockFunction] {
+          "calls": Array [
+            Array [
+              Object {
+                "actions": Array [
+                  Object {
+                    "action": [Function],
+                    "icon": [Function],
+                    "id": "expandBtn",
+                    "title": "Expand all",
+                    "tooltip": "Expand all sections",
+                  },
+                  Object {
+                    "action": [Function],
+                    "icon": [Function],
+                    "id": "collapseBtn",
+                    "title": "Collapse all",
+                    "tooltip": "Collapse all sections",
+                  },
+                ],
+                "breadcrumbs": Array [
+                  Object {
+                    "displayName": "Experiments",
+                    "href": "/experiments",
+                  },
+                ],
+                "pageTitle": "Compare runs",
+              },
+            ],
+          ],
+        }
+      }
+    />
+  </div>
+  <Component
+    orientation="vertical"
+  />
+  <Component
+    compareComponent={
+      Compare {
+        "_isMounted": true,
+        "context": Object {},
+        "props": Object {
+          "history": Object {
+            "push": [MockFunction],
+          },
+          "location": Object {
+            "pathname": "/compare",
+            "search": "",
+          },
+          "match": Object {
+            "params": Object {},
+          },
+          "toolbarProps": Object {
+            "actions": Array [
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "expandBtn",
+                "title": "Expand all",
+                "tooltip": "Expand all sections",
+              },
+              Object {
+                "action": [Function],
+                "icon": [Function],
+                "id": "collapseBtn",
+                "title": "Collapse all",
+                "tooltip": "Collapse all sections",
+              },
+            ],
+            "breadcrumbs": Array [
+              Object {
+                "displayName": "Experiments",
+                "href": "/experiments",
+              },
+            ],
+            "pageTitle": "Compare runs",
+          },
+          "updateBanner": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {},
+              ],
+            ],
+          },
+          "updateDialog": [MockFunction],
+          "updateSnackbar": [MockFunction],
+          "updateToolbar": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                },
+              ],
+            ],
+          },
+        },
+        "refs": Object {},
+        "setState": [Function],
+        "state": Object {
+          "collapseSections": Object {},
+          "fullscreenViewerConfig": null,
+          "paramsCompareProps": Object {
+            "rows": Array [],
+            "xLabels": Array [],
+            "yLabels": Array [],
+          },
+          "runs": Array [],
+          "selectedIds": Array [],
+          "viewersMap": Map {},
+          "workflowObjects": Array [],
+        },
+        "updater": Updater {
+          "_callbacks": Array [],
+          "_renderer": ReactShallowRenderer {
+            "_context": Object {},
+            "_element": <Compare
+              history={
+                Object {
+                  "push": [MockFunction],
+                }
+              }
+              location={
+                Object {
+                  "pathname": "/compare",
+                  "search": "",
+                }
+              }
+              match={
+                Object {
+                  "params": Object {},
+                }
+              }
+              toolbarProps={
+                Object {
+                  "actions": Array [
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "expandBtn",
+                      "title": "Expand all",
+                      "tooltip": "Expand all sections",
+                    },
+                    Object {
+                      "action": [Function],
+                      "icon": [Function],
+                      "id": "collapseBtn",
+                      "title": "Collapse all",
+                      "tooltip": "Collapse all sections",
+                    },
+                  ],
+                  "breadcrumbs": Array [
+                    Object {
+                      "displayName": "Experiments",
+                      "href": "/experiments",
+                    },
+                  ],
+                  "pageTitle": "Compare runs",
+                }
+              }
+              updateBanner={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {},
+                    ],
+                  ],
+                }
+              }
+              updateDialog={[MockFunction]}
+              updateSnackbar={[MockFunction]}
+              updateToolbar={
+                [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      Object {
+                        "actions": Array [
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "expandBtn",
+                            "title": "Expand all",
+                            "tooltip": "Expand all sections",
+                          },
+                          Object {
+                            "action": [Function],
+                            "icon": [Function],
+                            "id": "collapseBtn",
+                            "title": "Collapse all",
+                            "tooltip": "Collapse all sections",
+                          },
+                        ],
+                        "breadcrumbs": Array [
+                          Object {
+                            "displayName": "Experiments",
+                            "href": "/experiments",
+                          },
+                        ],
+                        "pageTitle": "Compare runs",
+                      },
+                    ],
+                  ],
+                }
+              }
+            />,
+            "_forcedUpdate": false,
+            "_instance": [Circular],
+            "_newState": Object {
+              "collapseSections": Object {},
+              "fullscreenViewerConfig": null,
+              "paramsCompareProps": Object {
+                "rows": Array [],
+                "xLabels": Array [],
+                "yLabels": Array [],
+              },
+              "runs": Array [],
+              "selectedIds": Array [],
+              "viewersMap": Map {},
+              "workflowObjects": Array [],
+            },
+            "_rendered": <div
+              className="page"
+            >
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Run overview"
+              />
+              <div
+                className="noShrink"
+              >
+                <RunList
+                  disablePaging={true}
+                  history={
+                    Object {
+                      "push": [MockFunction],
+                    }
+                  }
+                  location={
+                    Object {
+                      "pathname": "/compare",
+                      "search": "",
+                    }
+                  }
+                  match={
+                    Object {
+                      "params": Object {},
+                    }
+                  }
+                  onError={[Function]}
+                  onSelectionChange={[Function]}
+                  runIdListMask={Array []}
+                  selectedIds={Array []}
+                  toolbarProps={
+                    Object {
+                      "actions": Array [
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "expandBtn",
+                          "title": "Expand all",
+                          "tooltip": "Expand all sections",
+                        },
+                        Object {
+                          "action": [Function],
+                          "icon": [Function],
+                          "id": "collapseBtn",
+                          "title": "Collapse all",
+                          "tooltip": "Collapse all sections",
+                        },
+                      ],
+                      "breadcrumbs": Array [
+                        Object {
+                          "displayName": "Experiments",
+                          "href": "/experiments",
+                        },
+                      ],
+                      "pageTitle": "Compare runs",
+                    }
+                  }
+                  updateBanner={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {},
+                        ],
+                      ],
+                    }
+                  }
+                  updateDialog={[MockFunction]}
+                  updateSnackbar={[MockFunction]}
+                  updateToolbar={
+                    [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {
+                            "actions": Array [
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "expandBtn",
+                                "title": "Expand all",
+                                "tooltip": "Expand all sections",
+                              },
+                              Object {
+                                "action": [Function],
+                                "icon": [Function],
+                                "id": "collapseBtn",
+                                "title": "Collapse all",
+                                "tooltip": "Collapse all sections",
+                              },
+                            ],
+                            "breadcrumbs": Array [
+                              Object {
+                                "displayName": "Experiments",
+                                "href": "/experiments",
+                              },
+                            ],
+                            "pageTitle": "Compare runs",
+                          },
+                        ],
+                      ],
+                    }
+                  }
+                />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+              <Unknown
+                compareComponent={[Circular]}
+                sectionName="Parameters"
+              />
+              <div
+                className="noShrink outputsRow"
+              >
+                <Unknown
+                  orientation="vertical"
+                />
+                <CompareTable
+                  rows={Array []}
+                  xLabels={Array []}
+                  yLabels={Array []}
+                />
+                <Unknown />
+              </div>
+              <Unknown
+                orientation="vertical"
+              />
+            </div>,
+            "_rendering": false,
+            "_updater": [Circular],
+          },
+        },
+        Symbol(enzyme.__setState__): [Function],
+      }
+    }
+    sectionName="Parameters"
+  />
+  <div
+    className="noShrink outputsRow"
+  >
+    <Component
+      orientation="vertical"
+    />
+    <CompareTable
+      rows={Array []}
+      xLabels={Array []}
+      yLabels={Array []}
+    />
+    <Component />
+  </div>
+  <Component
+    orientation="vertical"
+  />
+</div>
+`;
