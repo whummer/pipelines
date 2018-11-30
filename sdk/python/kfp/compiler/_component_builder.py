@@ -306,9 +306,7 @@ class ImageBuilder(object):
     func_signature = 'def ' + new_func_name + '('
     for input_arg in input_args:
       func_signature += input_arg + ','
-    if len(input_args) > 0:
-      func_signature = func_signature[:-1]
-    func_signature += '):'
+    func_signature += '_output_file):'
     codegen.writeline(func_signature)
 
     # Call user function
@@ -321,9 +319,9 @@ class ImageBuilder(object):
     codegen.writeline(call_component_func)
 
     # Serialize output
-    codegen.writeline('with open("/output.txt", "w") as f:')
-    codegen.indent()
-    codegen.writeline('f.write(str(output))')
+    codegen.writeline('from pathlib import Path')
+    codegen.writeline('Path(_output_file).parent.mkdir(parents=True, exist_ok=True)')
+    codegen.writeline('Path(_output_file).write_text(str(output))')
     wrapper_code = codegen.end()
 
     # CLI codes
@@ -332,6 +330,7 @@ class ImageBuilder(object):
     codegen.writeline('parser = argparse.ArgumentParser(description="Parsing arguments")')
     for input_arg in input_args:
       codegen.writeline('parser.add_argument("' + input_arg + '", type=' + inputs[input_arg].__name__ + ')')
+    codegen.writeline('parser.add_argument("_output_file", type=str)')
     codegen.writeline('args = vars(parser.parse_args())')
     codegen.writeline('')
     codegen.writeline('if __name__ == "__main__":')
@@ -435,9 +434,6 @@ def _generate_pythonop(component_func, target_image, target_component_file=None)
     'container': {
       'image': target_image,
       'arguments': [],
-      'fileOutputs': {
-        'output': '/output.txt'
-      }
     }
   }
   for input in input_names:
@@ -446,6 +442,7 @@ def _generate_pythonop(component_func, target_image, target_component_file=None)
       'type': 'str'
     })
     component_artifact['implementation']['container']['arguments'].append({'value': input})
+  component_artifact['implementation']['container']['arguments'].append({'output': 'output'})
   
   target_component_file = target_component_file or getattr(component_func, '_component_target_component_file', None)
   if target_component_file:
